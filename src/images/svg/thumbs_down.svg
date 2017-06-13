@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>thumbs-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FBCB7E" offset="0%"></stop>
+            <stop stop-color="#F69644" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="91.619873%" id="linearGradient-2">
+            <stop stop-color="#FBCB7E" offset="0%"></stop>
+            <stop stop-color="#F69644" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Independence_Day_Air_Travel_Forecast_2017" transform="translate(-758.000000, -3450.000000)" fill-rule="nonzero">
+            <g id="Content" transform="translate(110.000000, 92.000000)">
+                <g id="#3b" transform="translate(45.000000, 3272.000000)">
+                    <g id="Table-Best-Cities-for" transform="translate(0.000000, 75.000000)">
+                        <g id="Reduction" transform="translate(587.000000, 0.000000)">
+                            <g id="title" transform="translate(16.000000, 11.000000)">
+                                <g id="thumbs-up">
+                                    <path d="M19.192,13.5669955 C19.075625,13.2563705 22.288625,10.3872455 20.41525,8.06237047 C19.976875,7.51899547 18.489375,10.6654955 16.377125,12.0899955 C15.211625,12.8757455 12.5,14.5487455 12.5,15.4736205 L12.5,21.4603705 C12.5,22.5724955 16.79975,23.7502455 20.067,23.7502455 C21.264875,23.7502455 23,16.2462455 23,15.0544955 C23,13.8574955 19.306625,13.8784955 19.192,13.5669955 Z M11.625,13.6501205 C11.04925,13.6501205 9,14.0001205 9,16.3827455 L9,20.6247455 C9,23.0056205 11.04925,23.2681205 11.625,23.2681205 C12.199875,23.2681205 10.75,22.7676205 10.75,21.2906205 L10.75,15.7142455 C10.75,14.1672455 12.199875,13.6501205 11.625,13.6501205 Z" id="Shape" fill="url(#linearGradient-1)" transform="translate(16.000000, 15.875123) rotate(-180.000000) translate(-16.000000, -15.875123) "></path>
+                                    <path d="M16,29.5294947 C23.4721336,29.5294947 29.5294947,23.4721336 29.5294947,16 C29.5294947,8.5278664 23.4721336,2.47050529 16,2.47050529 C8.5278664,2.47050529 2.47050529,8.5278664 2.47050529,16 C2.47050529,23.4721336 8.5278664,29.5294947 16,29.5294947 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z" id="Combined-Shape-Copy-2" fill="url(#linearGradient-2)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
