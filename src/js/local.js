@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     });
 
-    body.on('click', '.show-table', function(){
+    body.on('click', '.show-table', function(event){
         event.preventDefault();
         body.append($('.ranking-table'));
         $('.ranking-table').addClass('show');
@@ -23,19 +23,15 @@ $(document).ready(function () {
 
     });
 
-    body.on('click', '.mobile-only-close', function () {
+    body.on('click', '.mobile-only-close', function (event) {
+        event.preventDefault();
         $('.ranking-table').removeClass('show');
         $('.js-before_table').after($('.ranking-table'));
         $('.page__wrap').show();
+        $('html, body').animate({ scrollTop: $('.ranking-table').position().top }, 500);
         return false
 
     });
-
-    body.on('click', '.js-more_article', function(){
-
-        $(this).hide().siblings('.author-article').toggleClass('close')
-    });
-
 
     body.on('click', '.hint', function () {
         $(this).hide();

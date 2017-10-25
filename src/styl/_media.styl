@@ -5,27 +5,21 @@
   .main-pic
     padding: 32px 60px 32px 60px
     background-position center
-  
+
   .text-box
     padding: 64px 60px 64px 60px
     &--upper
       position: relative
       padding-left: 315px
-  
+
   .upper-pic
     left: 60px
-    
+
   .show_more
     margin-top: 44px
-  
-  .ontime-rank
-    padding-right: 730px
-  
-  .busiest-rank
-    padding-left: 607px
-  
-  .ontime-best-rank
-    padding-right: 607px
+
+  .ontime-tables__table-wrapper
+    width: 593px
 
 @media (max-width: 1850px)
   .content
@@ -37,7 +31,7 @@
   .main-pic
     padding-left: 60px
     height: 635px
-  
+
   .related-head
     padding: 0 25px
 
@@ -50,55 +44,10 @@
     &:before
       left: 20px
 
-
-@media (min-width: 1019px) and (max-width: 1370px)
-  .ontime-rank
-    padding-right: 0
-    .info-list
-      &__item
-        padding-right: 600px
-        &:nth-child(n+3)
-          padding-right: 0
-          
-    .table
-      width: 565px
-      td
-        padding-left: 14px
-        &:nth-child(2)
-          padding-left: 12px
-          font-size: 14px
-          
-        &:last-child
-          padding-right: 14px
-          
-  .busiest-rank
-    padding-left: 0
-    .info-list
-      &__item
-        margin-left: 600px
-        &:nth-child(n+4)
-          margin-left: 0
-          
-
-  .change-rank
-  &__table
-    th
-      padding-left: 22px
-      &:nth-child(2)
-        padding: 0
-        text-align: center      
-    td
-      &:first-child
-        width: 52%
-
-      &:nth-child(2)
-        width: auto
-          
-
 @media (max-width: 1370px)
   .content
     width: 980px
-  
+
   .article-title
     font-size: 40px
     line-height: 68px
@@ -110,7 +59,7 @@
     line-height: 30px
     font-weight: 300
     margin-bottom: 42px
-    
+
   .article-author
     font-size: 12px
     line-height: 16px
@@ -124,29 +73,38 @@
 
   .under-title
     margin-bottom: 32px
+    padding-left: 290px
+    min-height: 180px
 
-  .ontime-rank         
-    .table
-      width: 565px
-          
-  .change-rank
-    &__table
-      width: 425px
-      
-  .ontime-best-rank
-    padding-right: 377px
-    .table
-      width: 330px
-      &__head
-        text-align: left
-        top: 10px
+  .text-box--upper
+    padding-left: 45px
+
+  .upper-pic
+    left: 54px
+
+  .airline-rank__table--wrapper
+    width: 527px
+    margin-left: 24px
+
+  .info-list--ontime
+    margin-bottom: 24px
+
+  .ontime-tables__wrapper
+    width: 100%
+    margin-bottom: 24px
+    &:last-child
+      margin-bottom: 0
+
+  .full-table
+    tbody
       td
-        padding-left: 20px
-        &:first-child
-          padding-left: 16px
-        &:last-child
-          padding-left: 16px
-         
+        &:nth-child(2),
+        &:nth-child(3)
+          width: 21%
+
+  .ontime-tables__table-wrapper
+    width: 100%
+
   .related-head
     padding: 0 20px
 
@@ -155,7 +113,6 @@
 
   .related-list .col
     width: 49%
-
 
   .text-box.last
     padding-top: 41px
@@ -167,11 +124,20 @@
   .text-box.last
     display: block
 
+@media (min-width: 1019px) and (max-width: 1370px)
+  .full-table
+    thead
+      th
+        padding: 0 12px
+    tbody
+      td
+        padding: 0 12px
+
 @media (max-width: 1019px)
   .content
     width: auto
     max-width: 740px
-    
+
   .article-title
     font-size: 32px
     line-height: 38px
@@ -183,12 +149,12 @@
     line-height: 30px
     font-weight: 300
     margin-bottom: 12px
-    
+
   .article-author
     font-size: 12px
     line-height: 16px
     font-weight: 300
-    
+
   .main-pic
     height: 345px
     padding: 32px 25px 32px 25px
@@ -198,7 +164,7 @@
 
   .top-menu__link
     margin: 0 10px
-    
+
   .text-box
     padding: 44px 25px 44px 25px
     &--upper
@@ -210,85 +176,48 @@
       .upper-pic
         position: static
         width: 210px
-      
+
       .under-title
         width: 445px
         margin-bottom: 32px
 
       .main-text
         width: 100%
-    
-  .calendar
-    display: flex
-    flex-direction: column
-    padding-left: 0
-    &__img
-      position: static
-      align-self: center
-  
-  .ontime-rank
-    display: flex
-    flex-direction: column
-    padding-right: 0
-    .table
-      position: relative
-      align-self: center
-      width: 650px
-      margin-bottom: 32px
-    .info-list
-      order: 2
-      
-  .busiest-rank
-    display: flex
-    flex-direction: column
-    padding-left: 0
-    .table
-      position: relative
-      align-self: center
-      margin-bottom: 32px
-    .info-list
-      order: 2
-      
-  .change-rank
-    &__table
-      width: 330px   
-    .change-table
-      th
-        padding: 0 10px
-        padding-left: 24px
-        &:nth-child(2)
-          padding-left: 18px
-          text-align: left
-              
-      td
-        &:first-child
-          width: 60%
-          padding-right: 0
-        
-        &:nth-child(2)
-          width: auto
-          
-  .ontime-best-rank
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
-    padding-right: 0
-    .table
-      top: 0
-      position: relative
-      width: 330px
-      margin-bottom: 32px
-    .info-list
-      order: 2
-    .show_more
-      order: 3
-      margin: auto
-      margin-top: 32px
-      
 
   .block-title
     margin-bottom: 32px
+
+  .under-title
+    font-size: 16px
+    padding-left: 0
+
+  .calendar
+    padding-left: 0
+
+  .calendar__img
+    position: static
+    margin: 0 auto 18px auto
+
+  .airline-rank
+    flex-direction: column
+
+  .airline-rank__table--wrapper
+    margin: 32px auto 0 auto
+    width: 100%
+
+  .full-table
+    thead
+      th
+        padding: 0 10px
+        &:nth-child(3)
+          display: none
+    tbody
+      td
+        padding: 0 10px
+        &:nth-child(2)
+          width: 31%
+        &:nth-child(3)
+          display: none
 
   .related-head
     padding: 0 20px
@@ -317,51 +246,6 @@
   .text-box.last
     padding-top: 25px
 
-
-
-@media (min-width: 759px)
-  .row6
-    background-color: #F0FBFE
-
-  .row7
-    background-color: $color_white
-
-  .row8
-    background-color: #F0FBFE
-
-  .row9
-    background-color: $color_white
-
-  .row10
-    background-color: #F0FBFE
-  
-  .mobile-only-close
-    display: none
-       
-  .mobile-only-show
-    display: none
-    
- .ranking-table.show
-  padding-top: 20px
-  margin-right: 15px
-  margin-left: 15px
-  margin-top: 45px
-  .primary-text
-    display: none
-  .block-title
-    font-size: 26px
-    font-weight: 600
-  .full-table
-    display: table
-    width: 100%
-    overflow scroll
-  .mobile-only-show
-    display: none
-  .mobile-only-close
-    display: block
-
-
-
 @media (max-width: 759px)
   .content
     margin-left: 10px
@@ -369,7 +253,7 @@
 
   .top-logo
     display: none
-    
+
   .mob-logo
     display: block
     width: 35px
@@ -397,7 +281,7 @@
     line-height: 24px
     font-weight: 300
     margin-bottom: 12px
-    
+
   .article-author
     font-size: 12px
     line-height: 16px
@@ -406,9 +290,7 @@
   .main-pic
     height: 345px
     padding: 16px 12px 16px 12px
-    background-position: 27% 10%
-    background-image url("images/main_pic_320@2x.png")
-  
+
   .main-pic__mask
     height: 170px
 
@@ -420,204 +302,98 @@
         margin-bottom: 32px
       .under-title
         width: 100%
-      
+
       .under-title
         font-size: 16px
         line-height: 28px
         font-weight: 200
-        
+
       .main-text
         font-size: 14px
         line-height: 24px
         font-weight: 300
 
-  .calendar
-    &__img
-      img
-        width: 276px
-      
-  .ontime-rank
-    box-sizing: border-box
-    .table
-      width: 100%
-      &__head
-        text-align: left
-        font-size: 12px
-        line-height: 20px
-        top: 15px
-        left: 100px
-    
-      table
-        tbody
-          display: flex
-          flex-direction: column
-          flex-wrap: wrap
-          tr
-            width: 100%
-            display: flex
-            flex-direction: row
-            td
-              padding-top: 14px
-              &:first-child
-                width: 10%
-                padding-left: 10px
+  .calendar__img
+    width: 276px
+    margin: 0 auto 18px auto
+    img
+      width: 276px
 
-              &:nth-child(2)
-                width: 80%
-                padding-left: 8px
-                padding-top: 16px
-
-              &:nth-child(3)
-                width: auto
-                padding-top: 10px
-                padding-left: 0
-                padding-right: 14px
-                
-          .row1
-            order: 1
-        
-          .row2
-            order: 2
-          
-          .row3
-            order: 3
-          
-          .row4
-            order: 4
-          
-          .row5
-            order: 5
-          
-          .row6
-            order: 6
-            background-color: $color_white
-          
-          .row7
-            order: 7
-            background-color: #F0FBFE
-          
-          .row8
-            order: 8
-            background-color: $color_white
-          
-          .row9
-            order: 9
-            background-color: #F0FBFE
-            
-          .row10
-            order: 10
-            background-color: $color_white
-            td
-              &:first-child
-                padding-left: 8px
-  
-  .busiest-rank
-    .table
-      width: 100%
-      
-    table
-      th
+  .airline-rank__table
+    th
+      font-size: 10px
+      &:nth-child(3)
         border-right: none
-        &:first-child
-          text-align: center
-          padding-left: 8px
-          padding-right: 0
-          
-        &:nth-child(2)
-          padding-right: 0
-          padding-left: 6px
-          
-        &:nth-child(3)
-          display: none
-          
-        &:last-child
-          padding-left: 0
-          padding-right: 0
-          text-align: center
-          
-      td
-        &:first-child
-          width: 5%
-          padding-left: 2px
-          padding-right: 0
+      &:nth-child(4),
+      &:nth-child(5)
+        display: none
+    td
+      font-size: 12px
+      &:nth-child(4),
+      &:nth-child(5)
+        display: none
 
-        &:nth-child(2)
-          padding-left: 6px
+  .info-list--ontime
+    margin-bottom: 8px
 
-        &:nth-child(3)
-          display: none
-          
-        &:last-child
-          width: 10%
-          padding-left: 0
-          padding-right: 0
-          
-  .change-rank
-    flex-direction: column
-    &__table
-      width: 100%
-      .change-table
-        th
-          text-align: left
-          font-size: 10px
-          padding-left: 10px
-          padding-right: 0
-          border-right: none
-          &:first-child
-            padding-left: 14px
+  .ontime-tables__wrapper
+    margin-bottom: 12px
+    &:last-child
+      margin-bottom: 0
 
-          &:nth-child(2)
-            padding-left: 0 
-            padding-right: 8px
-            text-align: center   
+  .ontime-tables__table
+    th
+      font-size: 10px
+      &:nth-child(3)
+        border-right: none
+      &:nth-child(4),
+      &:nth-child(5)
+        display: none
+    td
+      font-size: 12px
+      &:nth-child(4),
+      &:nth-child(5)
+        display: none
+      &:nth-child(2)
+        width: 58%
 
-        td
-          &:first-child
-            width: 70%
-            padding-right: 0
-            padding-left: 14px
-
-          &:nth-child(2)
-            width: auto
-            padding-left: 12px
-            padding-right: 12px
-
-  .growth
-    margin-bottom: 32px
-
-  .ontime-best-rank
-    .table
-      width: 100%
-      &__head
-        top: 12px
-        font-size: 12px
-        line-height: 20px
-    .small__table
-      tbody  
-        td
-          padding-left: 10px
-          &:first-child
-            padding-left: 10px
-            
-          &:last-child
-            padding-left: 0
-            padding-right: 14px        
-          
-
-  .show_more
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 100%
-    height: 58px
-    padding-top: 9px
-    padding-bottom: 9px
-    line-height: 18px
-    box-sizing: border-box
-    text-align: center
-    &:after
+  .ontime-tables__header
+    font-size: 10px
+    padding-left: 16px
+    &:before
       display: none
 
+  .full-table-wrapper
+    min-width: 690px
+
+  .full-table
+    thead
+      th
+        padding: 0 6px
+        font-size: 10px
+
+    tbody
+      td
+        padding: 0 6px
+        font-size: 10px
+      &:nth-child(2),
+      &:nth-child(3)
+        font-size: 12px
+
+
+  .methodology-content
+    flex-direction: column
+    align-items: center
+
+  .methodology-img
+    margin-right: 0
+    margin-bottom: 24px
+
+  .under-title
+    margin-bottom: 24px
+
+  .full-table-wrapper
+    border: none
 
   .primary-title
     font-size: 20px
@@ -628,7 +404,7 @@
     flex-wrap wrap
 
   .bottom-col
-    width: 100% 
+    width: 100%
 
   .block-title
     font-size 26px
@@ -687,28 +463,6 @@
   .mobile-only-show
     display: block
 
-  .mobile-only-close
-    font-style: normal
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-align: center
-    color: white
-    text-decoration: none
-    height: 41px
-    text-transform: uppercase
-    border-radius: 3px
-    padding: 0 20px
-    overflow: hidden
-    font-size: 11px
-    line-height: 41px
-    font-weight bold
-    position: fixed
-    background-color $main_color
-    top: 10px
-    right: 25px
-    .icon
-      margin-right: 8px
-
   .colorful
     display block
     .breadcrumbs__item
@@ -727,41 +481,7 @@
       &:nth-child(3)
         overflow: hidden
         min-width: 90px
-      
-  .table
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: flex-start
-    align-items: center
-    padding: 0 2px 2px
-  
-    &:before
-      position: static
-      margin-left: 16px
-      margin-right: 16px
-        
-    &__head
-      width: 60%
-      position: static
-      font-size: inherit
-      min-height: 64px
-      display: flex
-      align-items: center
-    
-    .small__table
-      width: 100%
-      
-  .ontime-rank
-    .table
-      &:before
-        margin-top: auto
-        
-  .busiest-rank
-    .table
-      &:before
-        margin-top: auto
-    
+
   .mobile-table
     width: 100%
     margin-bottom: 16px
@@ -783,12 +503,12 @@
     line-height: 41px
     font-weight bold
     position: fixed
-    background-color $main_color
+    background-image: linear-gradient(-90deg, #B56142 0%, #9B443D 100%)
     top: 10px
     right: 25px
     .icon
       margin-right: 8px
-    
+
   .ranking-table
     .full-table
       display: none
@@ -813,3 +533,5 @@
       display: none
     .mobile-only-close
       display: block
+    .full-table-wrapper
+      border: 1px solid #f2ece6

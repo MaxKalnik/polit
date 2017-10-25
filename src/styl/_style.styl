@@ -1,7 +1,8 @@
 @import "_variable.styl"
 
 body
-  font-family: Whitney SSm A, sans-serif;
+  font-family: Whitney SSm A, sans-serif
+  $ultraThin()
 
 .main-article
   &--table
@@ -22,21 +23,21 @@ body
   &.ind-text
     font-weight 300
   a
-    color: $main_color
-    border-bottom  1px solid rgba(63, 136, 197, 0.3)
+    color: #719a25
+    border-bottom  1px solid rgba(112, 153, 31, 0.3)
     &:hover
       border-bottom: none
 b
   font-weight 600
 .main-article
-	padding-top: 32px
-	
+  padding-top: 32px
+
 .page__wrap
   background-image: url(images/footer_bg.png), url(images/svg/clouds_bg.svg), url(images/svg/clouds_bg.svg), linear-gradient(-180deg, #34C4F0 0%, #1C90E2 100%)
   background-position 50% 100%, 0 250px, 600px 50%
   background-repeat no-repeat, repeat-x, repeat-x
   background-size: auto, auto, auto
- 
+
 .main-pic
   position: relative
   background-position: center
@@ -65,38 +66,38 @@ b
 
 .article-text
   margin-top: auto
-  z-index: 5 
-  
+  z-index: 5
+
 .article-title
-	color: $color_white 
-	font-size: 50px
-	line-height: 70px
-	font-weight: 600
-	margin-bottom: 12px
+  color: $color_white
+  font-size: 50px
+  line-height: 70px
+  font-weight: 600
+  margin-bottom: 12px
 
 .article-text__item
-	color: $color_white
-	font-size: 22px
-	line-height: 28px
-	font-weight: 300
-	margin-bottom: 36px
+  color: $color_white
+  font-size: 22px
+  line-height: 28px
+  font-weight: 300
+  margin-bottom: 36px
 
 .article-author
-	position: relative
-	color: $color_white
-	font-size: 12px
-	line-height: 14px
-	font-weight: 300
-	padding-left: 32px
-	&:before
-		content: ''
-		position: absolute
-		left: 0
-		top: -2px
-		width: 20px
-		height: 20px
-		background-image: url(images/icons/author.svg)
-		background-repeat: no-repeat
+  position: relative
+  color: $color_white
+  font-size: 12px
+  line-height: 14px
+  font-weight: 300
+  padding-left: 32px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: -2px
+    width: 20px
+    height: 20px
+    background-image: url(images/icons/author.svg)
+    background-repeat: no-repeat
 
 .breadcrumbs
   &__wrap
@@ -136,131 +137,275 @@ b
       text-decoration none
 
 .text-box
-	padding: 64px 45px 64px 45px
-	background-color: $color_white
-	margin-bottom: 10px
-	&--upper
-		position: relative
-		padding-left: 300px
-	
+  padding: 44px 45px 60px 45px
+  background-color: $color_white
+  margin-bottom: 10px
+  &--upper
+    position: relative
+    padding-left: 290px
+    padding-bottom: 50px
 
 .upper-pic
-	position: absolute
-	left: 44px
-	img
-		width: 210px
-		height: 175px
+  position: absolute
+  left: 34px
+  img
+    width: 210px
+    height: 175px
 
 .under-title
-	color: #4a4a4a
-	font-size: 18px
-	line-height: 30px
-	font-weight: 200
-	margin-bottom: 44px
+  color: #4a4a4a
+  font-size: 18px
+  line-height: 30px
+  font-weight: 200
+  margin-bottom: 24px
 
 .main-text
-	color: #1C3144
-	font-size: 14px
-	line-height: 24px
-	font-weight: 300
-	
+  color: #1C3144
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+
 .block-title
   font-size: 32px
   line-height: 40px
   margin-bottom: 44px
-  color: #103144 
+  color: #103144
   text-align: center
-  
+  font-weight: 600
+
 .calendar
-	position: relative
-	min-height: 400px
-	padding-left: 380px
-	
+  position: relative
+  min-height: 400px
+  padding-left: 360px
+
 .calendar__img
   position: absolute
   left: -20px
-  top: -14px  
+  top: -14px
   max-width: 356px
   img
     max-width: 356px
-		
-.primary-text
-	margin-bottom: 32px
-	font-size: 14px
-	line-height: 24px
-	font-weight: 300px
-	color: #173144
-	
-.days-tips__text
-	position: relative
-	padding-left: 32px
-	font-size: 14px
-	line-height: 24px
-	font-weight: 300
-	&:not(:last-child)
-		margin-bottom: 25px	
-	&:before
-		content: ''
-		position: absolute
-		left: 0
-		width: 20px
-		height: 20px
-		background-image: url(images/icons/star.svg)
-		
-.orange
-	&:before
-		background-image: url(images/icons/star_orange.svg)		
 
-.blue
-	&:before
-		background-image: url(images/icons/star_blue.svg)	
-		
-.red
-	&:before
-		background-image: url(images/icons/star_red.svg)	
-		
+.primary-text
+  margin-bottom: 32px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  color: #173144
+
+.days-tips__text
+  position: relative
+  padding-left: 44px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  &:not(:last-child)
+    margin-bottom: 25px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    width: 32px
+    height: 32px
+    background-image: url(images/icons/tip-first.svg)
+
+.days-tips__text--second
+  &:before
+    background-image: url(images/icons/tip-2.svg)
+
+.days-tips__text--yellow
+  &:before
+    background-image: url(images/icons/tip-yellow.svg)
+
+.days-tips__text--brown
+  &:before
+    background-image: url(images/icons/tip-brown.svg)
+
+.days-tips__text--red
+  &:before
+    background-image: url(images/icons/tip-red.svg)
+
+.airline-rank
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: space-between
+
+.info-list
+  flex: 1
 
 .info-list__item
-	position: relative
-	padding-left: 18px
-	font-size: 14px
-	line-height: 24px
-	font-weight: 300px
-	&:before
-		content: ''
-		position: absolute
-		left: 0
-		top: 8px
-		width: 6px
-		height: 6px
-		background-image: url(images/icons/oval_blue.svg)
-	&:not(:last-child)
-		margin-bottom: 24px
+  position: relative
+  padding-left: 18px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 8px
+    width: 6px
+    height: 6px
+    background-image: url(images/icons/oval-brown.svg)
+  &:not(:last-child)
+    margin-bottom: 24px
 
-.ontime-rank
-	position: relative
-	padding-right: 700px
-	min-height: 344px
-	.table
-		position: absolute
-		right: 0
-		top: 0
+.info-list--ontime
+  margin-bottom: 44px
+  .info-list__item
+    &:not(:last-child)
+      margin-bottom: 16px
 
+.airline-rank__table--wrapper
+  width: 654px
+  flex-basis: auto
+  background-image: linear-gradient(-90deg, #B56142 0%, #9B443D 100%)
+  border-radius: 5px
+  padding: 0 2px 2px 2px
+  margin-left: 36px
+  box-shadow: 0 6px 20px 0 rgba(181, 96, 65,0.20)
 
-.busiest-rank
-	position: relative
-	padding-left: 587px
-	min-height: 620px
-	margin-bottom: 64px
-	.table
-		position: absolute
-		left: 0
-		top: 0
-	.info-list__item
-		&:before
-			background-image: url(images/icons/oval_red.svg)
+.airline-rank__table
+  width: 100%
+  border-collapse: collapse
+  th
+    height: 48px
+    font-size: 12px
+    line-height: 13px
+    color: #ffffff
+    text-transform: uppercase
+    padding: 0 16px
+    border-right: 1px solid rgba(255, 255, 255, 0.3)
+    box-sizing: border-box
+    &:nth-child(2)
+      text-align: left
+    &:last-child
+      border-right: none
 
-		
+  tr
+    background: #ffffff
+    border-bottom: 1px solid #f0e9e7
+    &:nth-child(even)
+      background: #fcf9f8
+    &:first-child
+      background: transparent
+    &:last-child
+      border-bottom: none
+
+  td
+    font-size: 14px
+    font-weight: 600
+    text-align: center
+    padding: 13px 16px
+    &:first-child
+      color: rgba(138, 100, 87, 0.5)
+      font-size: 12px
+      line-height: 16px
+      padding: 18px 16px
+    &:nth-child(2)
+      text-align: left
+
+.ontime-tables__container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+.ontime-tables__header
+  position: relative
+  font-size: 13px
+  line-height: 24px
+  font-weight: 700
+  text-transform: uppercase
+  padding-left: 132px
+  &:before
+    content: ''
+    position: absolute
+    left: 39px
+    bottom: 0
+    width: 80px
+    height: 40px
+    background: url('images/icons/best-table-upper.svg') center no-repeat
+    background-size: cover
+
+.ontime-tables__header--best
+  color: #75a020
+
+.ontime-tables__header--worst
+  color: #e8572f
+  &:before
+    background: url('images/icons/worst-table-upper.svg') center no-repeat
+    background-size: cover
+
+.ontime-tables__wrapper
+  padding-top: 20px
+
+.ontime-tables__table-wrapper
+  width: 543px
+  padding: 0 2px 2px 2px
+  border-radius: 5px
+
+.ontime-tables__table-wrapper--best
+  background-image: linear-gradient(269deg, #96CC29 0%, #70991F 94%)
+  box-shadow: 0 6px 20px 0 rgba(150,204,41,0.20)
+
+.ontime-tables__table-wrapper--worst
+  background-image: linear-gradient(-89deg, #F07030 1%, #E6502E 96%)
+  box-shadow: 0 6px 20px 0 rgba(240, 112, 48,0.20)
+
+.ontime-tables__table
+  border-collapse: collapse
+  width: 100%
+  th
+    height: 58px
+    font-size: 10px
+    line-height: 16px
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    padding: 0 14px
+    border-right: 1px solid rgba(255, 255, 255, 0.3)
+    box-sizing: border-box
+    &:nth-child(2)
+      text-align: left
+    &:last-child
+      border-right: none
+
+  td
+    font-size: 14px
+    line-height: 16px
+    font-weight: 600
+    text-align: center
+    padding: 16px 14px
+    &:first-child
+      font-size: 12px
+    &:nth-child(2)
+      text-align: left
+      width: 40%
+
+.ontime-tables__table--best
+  tr
+    background: #ffffff
+    border-bottom: 1px solid #eef2e6
+    &:nth-child(odd)
+      background: #fdfff9
+    &:first-child
+      background: transparent
+    &:last-child
+      border-bottom: none
+
+.ontime-tables__table--worst
+  tr
+    background: #ffffff
+    border-bottom: 1px solid #f2e9e6
+    &:nth-child(odd)
+      background: #fffbf9
+    &:first-child
+      background: transparent
+    &:last-child
+      border-bottom: none
+
 .rate-block
   background: #00B5F4
   border-radius: 3px
@@ -286,8 +431,17 @@ b
     background-repeat: no-repeat
     width: 13px
     height: 18px
-    left: 6px
-    top: 5px
+    left: 10px
+    top: 6px
+
+.rate-block--brown
+  background-image: linear-gradient(269deg, #B56142 0%, #9B443D 100%)
+
+.rate-block--green
+  background: #739d20
+
+.rate-block--red
+  background: #e7542e
 
 .reg
   font-weight 600
@@ -299,27 +453,22 @@ b
   top: 0
   &--tbl
     color: #ffffff
-	
-.change-rank
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  &__table
-    width: 540px
-
-.ontime-best-rank
-  position: relative
-  padding-right: 587px
-  min-height: 685px
-  .table
-    position: absolute
-
 
 .text-box--methology
-	.primary-text
-		font-size: 14px
-		line-height: 24px
-		
+  .primary-text
+    font-size: 14px
+    line-height: 24px
+
+.methodology-content
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+
+.methodology-img
+  position: relative
+  top: 4px
+  margin-right: 24px
+
 .related
   background: #FFFFFF
   border-radius: 5px
@@ -393,7 +542,7 @@ b
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   font-smoothing: grayscale
-  
+
 .show_more
   position: relative
   width: 440px
@@ -432,56 +581,13 @@ b
       background-image: url(images/svg/button_icon-hover.svg)
 
 .overflow-table
-  padding-top: 22px
-  border-radius: 5px  
-  .primary-text
-    margin-bottom: 32px
-     
-  .breadcrumbs
-    &__wrap
-      display: flex
-      background-color: $color_white
-      border-radius: 2px
-      padding: 0
-      margin-bottom: 44px
-      box-shadow: none
-    &__item
-      font-size: 12px
-      letter-spacing: 0
-      line-height: 42px
-      color: #475359
-      &:first-child
-        &:before
-          display: none
-      &:before
-        content: ''
-        display: inline-block
-        color: #fff
-        width: 6px
-        height: 13px
-        background-image: url(images/svg/arrow.svg)
-        background-position: 0px 5px
-        background-size: 100% auto
-        margin: 0 6px 0 8px
-        background-repeat no-repeat
-
-    &__link
-      color: #0683BD
-      letter-spacing: 0
-      line-height: 42px
-      text-decoration: none
-      $ultraThin()
-      &:hover
-        text-decoration: underline
-  
   .block-title
     font-size: 32px
     line-height: 40px
     font-weight: 600
-    
+
   .mobile-only-close
     display: none
-       
+
   .mobile-only-show
     display: none
-
