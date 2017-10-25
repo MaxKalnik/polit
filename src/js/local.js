@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     });
 
-    body.on('click', '.show-table', function(event){
+    body.on('click', '.js-table', function(event){
         event.preventDefault();
         body.append($('.ranking-table'));
         $('.ranking-table').addClass('show');
