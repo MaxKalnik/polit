@@ -130,9 +130,12 @@ ul,li
   padding: 44px 45px 60px 45px
   background-color: $color_white
   margin-bottom: 10px
-  &--upper
-    position: relative
-    padding-bottom: 50px
+
+.text-box--upper
+  position: relative
+  padding-bottom: 50px
+  .main-text
+    font-weight: 400
 
 .upper-pic
   position: absolute
@@ -240,6 +243,7 @@ ul,li
   padding: 14px 24px
   border: 1px solid #BEC5EF
   cursor: pointer
+  box-sizing: border-box
   &:after
     content: ''
     display: inline-block
@@ -256,6 +260,7 @@ ul,li
   &:hover
     background-image: linear-gradient(-90deg, #1B36CC 0%, #2137B2 96%)
     color: #ffffff
+    border: 1px solid transparent
     &:after
       background: url('images/icons/btn-icon-hover.svg') center no-repeat
     .btn-table__text
@@ -386,7 +391,7 @@ ul,li
     background: url(images/icons/info-icon.svg) center no-repeat
 
 .methodology-sources
-  margin-left: 87px
+  margin-left: 104px
   margin-bottom: 32px
 
 .methodology-sources__container
@@ -424,7 +429,7 @@ ul,li
     background: url(images/icons/bullet.svg)
 
 .methodology-links
-  margin-left: 87px
+  margin-left: 104px
 
 .methodology-links__title
   @extend .methodology-sources__title
@@ -494,6 +499,7 @@ ul,li
     &:hover
       background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
       color: #ffffff
+      border: 1px solid transparent
       &:after
         background: url('images/icons/btn-icon-hover.svg') center no-repeat
       .btn-table__text
@@ -519,7 +525,7 @@ ul,li
 
 .methodology-img
   position: relative
-  width: 80px
+  min-width: 80px
   height: 80px
   margin-right: 24px
 
