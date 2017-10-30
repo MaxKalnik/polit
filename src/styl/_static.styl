@@ -85,6 +85,69 @@
     i:before
       background-image: url(images/svg/icon-user_color.svg)
 
+.featured-cards
+  display: flex
+  flex-direction: row
+  background: #ffffff
+  padding: 32px
+  margin-bottom: 32px
+  box-shadow: 0 9px 20px 0 rgba(13,93,131,0.10)
+  border-radius: 5px
+
+.featured-cards__img-container
+  margin-right: 32px
+
+.featured-cards__content
+  flex-grow: 1
+
+.featured-cards__header-promo
+  font-size: 10px
+  line-height: 16px
+  font-weight: 700
+  color: #a1b9c2
+  text-transform: uppercase
+  margin-bottom: 8px
+
+.featured-cards__header-title
+  font-size: 22px
+  line-height: 32px
+  font-weight: 600
+  color: #3d3126
+  margin-bottom: 24px
+
+.featured-cards__links-list-item
+  position: relative
+  padding-left: 24px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 4px
+    width: 24px
+    height: 24px
+    background: url(images/svg/check-mark.svg) center no-repeat
+
+.featured-cards__links
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.featured-cards__links-list
+  display: flex
+  width: 50%
+  flex-wrap: wrap
+  flex-direction: column
+  align-content: space-between
+
+.featured-cards__links-list-link
+  font-size: 14px
+  line-height: 32px
+  font-weight: 300
+  color: #008fd6
+  border-bottom: 1px solid #a7d8f1
+  &:hover
+    border-bottom: none
+
 .page-footer
   border-top 1px solid rgba(251, 247, 255, .5)
   .content
@@ -131,6 +194,12 @@
 
   .footer-menu__link:first-child
     margin-left: 0
+
+  .featured-cards__links
+    flex-direction: column
+
+  .featured-cards__links-list
+    width: 100%
 
 @media (max-width: 959px)
   .page-header
@@ -210,6 +279,17 @@
       margin-right: -67px
       .top-menu__link
         display: BLOCK
+
+  .featured-cards
+    flex-direction: column
+    align-items: center
+
+  .featured-cards__img-container
+    margin-right: 0
+    margin-bottom: 24px
+
+  .featured-cards__content
+    width: 100%
 
   .page-footer
     padding-top: 10px

@@ -4,14 +4,14 @@
     <title>Methodology_icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#B56142" offset="0%"></stop>
-            <stop stop-color="#9B443D" offset="100%"></stop>
+        <linearGradient x1="100%" y1="50%" x2="3.90625%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#1B36CC" offset="0%"></stop>
+            <stop stop-color="#2137B2" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Thanksgiving_Holiday_2017_1440" transform="translate(-163.000000, -5890.000000)">
-            <g id="Methodology" transform="translate(155.000000, 5814.000000)">
+        <g id="Safe_Cities_1440" transform="translate(-163.000000, -14666.000000)">
+            <g id="Methodology" transform="translate(155.000000, 14590.000000)">
                 <g id="Methodology_icon" transform="translate(0.000000, 72.000000)">
                     <rect id="base" x="0" y="0" width="80" height="80"></rect>
                     <g id="Page-1" transform="translate(8.000000, 4.000000)" fill="url(#linearGradient-1)" opacity="0.903419384">

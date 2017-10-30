@@ -3,6 +3,7 @@
 body
   font-family: Whitney SSm A, sans-serif
   $ultraThin()
+  color: #0A0C0D
 
 .main-article
   &--table
@@ -13,22 +14,11 @@ body
   margin: 0 auto
   position relative
 
-.main-text
-  font-size: 14px
-  color: $text_color
-  letter-spacing: -0.1px
-  line-height: 24px
-  font-weight 400
+ul,li
+  list-style: none
+  padding :0
+  margin: 0
 
-  &.ind-text
-    font-weight 300
-  a
-    color: #719a25
-    border-bottom  1px solid rgba(112, 153, 31, 0.3)
-    &:hover
-      border-bottom: none
-b
-  font-weight 600
 .main-article
   padding-top: 32px
 
@@ -142,28 +132,37 @@ b
   margin-bottom: 10px
   &--upper
     position: relative
-    padding-left: 290px
     padding-bottom: 50px
 
 .upper-pic
   position: absolute
   left: 34px
   img
-    width: 210px
-    height: 175px
+    width: 120px
+    height: 120px
 
 .under-title
-  color: #4a4a4a
-  font-size: 18px
-  line-height: 30px
+  color: #0A0C0D
+  font-size: 17px
+  line-height: 32px
   font-weight: 200
   margin-bottom: 24px
+  padding-left: 150px
 
 .main-text
-  color: #1C3144
+  color: #0A0C0D
   font-size: 14px
   line-height: 24px
   font-weight: 300
+  margin-bottom: 30px
+  &:last-child
+    margin-bottom: 0
+
+  a
+    color: #0DA4F0
+    border-bottom  1px solid rgba(30, 146, 204, 0.2)
+    &:hover
+      border-bottom: none
 
 .block-title
   font-size: 32px
@@ -173,241 +172,274 @@ b
   text-align: center
   font-weight: 600
 
-.calendar
-  position: relative
-  min-height: 400px
-  padding-left: 360px
-
-.calendar__img
-  position: absolute
-  left: -20px
-  top: -14px
-  max-width: 356px
-  img
-    max-width: 356px
-
-.primary-text
-  margin-bottom: 32px
-  font-size: 14px
-  line-height: 24px
-  font-weight: 300
-  color: #173144
-
-.days-tips__text
-  position: relative
-  padding-left: 44px
-  font-size: 14px
-  line-height: 24px
-  font-weight: 300
-  &:not(:last-child)
-    margin-bottom: 25px
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    width: 32px
-    height: 32px
-    background-image: url(images/icons/tip-first.svg)
-
-.days-tips__text--second
-  &:before
-    background-image: url(images/icons/tip-2.svg)
-
-.days-tips__text--yellow
-  &:before
-    background-image: url(images/icons/tip-yellow.svg)
-
-.days-tips__text--brown
-  &:before
-    background-image: url(images/icons/tip-brown.svg)
-
-.days-tips__text--red
-  &:before
-    background-image: url(images/icons/tip-red.svg)
-
-.airline-rank
-  display: flex
-  flex-direction: row
-  align-items: flex-start
-  justify-content: space-between
-
-.info-list
-  flex: 1
-
-.info-list__item
-  position: relative
-  padding-left: 18px
-  font-size: 14px
-  line-height: 24px
-  font-weight: 300
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 8px
-    width: 6px
-    height: 6px
-    background-image: url(images/icons/oval-brown.svg)
-  &:not(:last-child)
-    margin-bottom: 24px
-
-.info-list--ontime
+.ranking-table__wrapper
   margin-bottom: 44px
-  .info-list__item
-    &:not(:last-child)
-      margin-bottom: 16px
 
-.airline-rank__table--wrapper
-  width: 654px
-  flex-basis: auto
-  background-image: linear-gradient(-90deg, #B56142 0%, #9B443D 100%)
-  border-radius: 5px
-  padding: 0 2px 2px 2px
-  margin-left: 36px
-  box-shadow: 0 6px 20px 0 rgba(181, 96, 65,0.20)
-
-.airline-rank__table
+.ranking-table__table
   width: 100%
+  background-image: linear-gradient(90deg, #1B36CC 0%, #2137B2 96%)
   border-collapse: collapse
-  th
-    height: 48px
-    font-size: 12px
-    line-height: 13px
-    color: #ffffff
-    text-transform: uppercase
-    padding: 0 16px
-    border-right: 1px solid rgba(255, 255, 255, 0.3)
-    box-sizing: border-box
-    &:nth-child(2)
-      text-align: left
-    &:last-child
-      border-right: none
+  border-radius: 5px
+  border: 1px solid #E6E6F2
+  box-sizing: border-box
+  thead
+    th
+      height: 46px
+      font-size: 10px
+      line-height: 16px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      text-align: center
+      padding: 0 22px
+      box-sizing: border-box
+      border-right: 1px solid rgba(255, 255, 255, 0.3)
+      &:first-child
+        text-align: left
+      &:last-child
+        border-right: none
 
-  tr
-    background: #ffffff
-    border-bottom: 1px solid #f0e9e7
-    &:nth-child(even)
-      background: #fcf9f8
-    &:first-child
-      background: transparent
-    &:last-child
-      border-bottom: none
+  tbody
+    tr
+      background: #ffffff
+      border-bottom: 1px solid #E6E6F2
+      &:nth-child(odd)
+        background: #F8F8FC
+      &:last-child
+        border-bottom: none
 
-  td
-    font-size: 14px
-    font-weight: 600
-    text-align: center
-    padding: 13px 16px
-    &:first-child
-      color: rgba(138, 100, 87, 0.5)
+    td
+      height: 51px
       font-size: 12px
       line-height: 16px
-      padding: 18px 16px
-    &:nth-child(2)
-      text-align: left
+      font-weight: 600
+      color: #0A0C0D
+      padding: 0 22px
+      box-sizing: border-box
+      text-align: center
+      &:first-child
+        text-align: left
+        width: 18%
 
-.ontime-tables__container
+.num
+  color: #859BA6
+
+.btn-container
+  display: flex
+  justify-content: center
+  margin-bottom: 60px
+
+.btn-table
+  display: inline-block
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  text-transform: uppercase
+  color: #2137B2
+  border-radius: 5px
+  padding: 14px 24px
+  border: 1px solid #BEC5EF
+  cursor: pointer
+  &:after
+    content: ''
+    display: inline-block
+    position: relative
+    top: 4px
+    width: 20px
+    height: 20px
+    margin-left: 10px
+    background: url('images/icons/btn-icon-safe.svg') center no-repeat
+
+  .btn-table__text
+    border-bottom: 1px solid #BCC3E7
+
+  &:hover
+    background-image: linear-gradient(-90deg, #1B36CC 0%, #2137B2 96%)
+    color: #ffffff
+    &:after
+      background: url('images/icons/btn-icon-hover.svg') center no-repeat
+    .btn-table__text
+      border-bottom: none
+
+.cities-items__container
+  margin-bottom: 30px
+  &:last-child
+    margin-bottom: 0
+
+.cities-items__item
   display: flex
   flex-direction: row
-  flex-wrap: wrap
   justify-content: space-between
+  align-items: flex-start
+  margin-bottom: 30px
+  &:last-child
+    margin-bottom: 0
 
-.ontime-tables__header
+.cities-items__header
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-bottom: 20px
+
+.cities-items__title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+  margin-left: 10px
+
+.state
+  font-weight: 200
+
+.cities-items__photo
   position: relative
-  font-size: 13px
-  line-height: 24px
-  font-weight: 700
-  text-transform: uppercase
-  padding-left: 132px
+  width: 434px
+  height: 160px
+  border-radius: 5px
+  border: 10px solid #ffffff
+  box-shadow: 0 0 20px 0 rgba(8,53,77,.12), 10px 26px 53px -28px rgba(0,0,0,.75)
+  overflow: hidden
+  box-sizing: border-box
+
+.cities-items__img-wrap
+  position: relative
+  height: 140px
+  border-radius: 5px
+  overflow: hidden
+
+.cities-items__img
+  position: absolute
+  width: 100%
+  max-width: 100%
+  top: -40%
+
+.aurora
+  top: -85%
+
+.rock-valley
+  top: -30%
+
+.new-canaan
+  top: -70%
+
+.commerce-township
+  top: -70%
+
+.orange-city
+  top: -60%
+
+.lincoln
+  top: -70%
+
+.bastrop
+  top: -90%
+
+.del-city
+  top: -50%
+
+.lumberton
+  top: -80%
+
+.shawnee
+  top: -60%
+
+.hammond
+  top: -50%
+
+.anniston
+  top: -75%
+
+.selma
+  top: -60%
+
+.toledo
+  top: -80%
+
+
+.main-text--under-img
+  margin-top: 16px
+
+.cities-items__content
+  width: 667px
+
+.cities-items__text
+  font-size: 14px
+  line-height: 26px
+
+.info-text
+  position: relative
+  padding: 23px 45px 25px 101px
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  font-style: italic
+  border: 1px solid #E6E6F2
+  border-radius: 5px
+  margin-bottom: 30px
   &:before
     content: ''
     position: absolute
-    left: 39px
-    bottom: 0
-    width: 80px
-    height: 40px
-    background: url('images/icons/best-table-upper.svg') center no-repeat
-    background-size: cover
+    height: 32px
+    width: 32px
+    top: 50%
+    transform: translateY(-50%)
+    left: 45px
+    background: url(images/icons/info-icon.svg) center no-repeat
 
-.ontime-tables__header--best
-  color: #75a020
+.methodology-sources
+  margin-left: 87px
+  margin-bottom: 32px
 
-.ontime-tables__header--worst
-  color: #e8572f
+.methodology-sources__container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+.methodology-sources__item
+  width: 444px
+  margin-bottom: 24px
+
+.methodology-sources__title
+  font-size: 18px
+  line-height: 26px
+  font-weight: 600
+  margin-bottom: 12px
+
+.methodology-sources__item-title
+  font-size: 14px
+  line-height: 28px
+  font-weight: 600
+
+.sources-item
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  font-style: italic
   &:before
-    background: url('images/icons/worst-table-upper.svg') center no-repeat
-    background-size: cover
+    content: ''
+    display: inline-block
+    width: 6px
+    height: 6px
+    margin-right: 8px
+    background: url(images/icons/bullet.svg)
 
-.ontime-tables__wrapper
-  padding-top: 20px
+.methodology-links
+  margin-left: 87px
 
-.ontime-tables__table-wrapper
-  width: 543px
-  padding: 0 2px 2px 2px
-  border-radius: 5px
+.methodology-links__title
+  @extend .methodology-sources__title
 
-.ontime-tables__table-wrapper--best
-  background-image: linear-gradient(269deg, #96CC29 0%, #70991F 94%)
-  box-shadow: 0 6px 20px 0 rgba(150,204,41,0.20)
-
-.ontime-tables__table-wrapper--worst
-  background-image: linear-gradient(-89deg, #F07030 1%, #E6502E 96%)
-  box-shadow: 0 6px 20px 0 rgba(240, 112, 48,0.20)
-
-.ontime-tables__table
-  border-collapse: collapse
-  width: 100%
-  th
-    height: 58px
-    font-size: 10px
-    line-height: 16px
-    color: #ffffff
-    font-weight: 700
-    text-transform: uppercase
-    padding: 0 14px
-    border-right: 1px solid rgba(255, 255, 255, 0.3)
-    box-sizing: border-box
-    &:nth-child(2)
-      text-align: left
-    &:last-child
-      border-right: none
-
-  td
+.methodology-links__item
+  a
+    color: #0DA4F0
     font-size: 14px
-    line-height: 16px
-    font-weight: 600
-    text-align: center
-    padding: 16px 14px
-    &:first-child
-      font-size: 12px
-    &:nth-child(2)
-      text-align: left
-      width: 40%
-
-.ontime-tables__table--best
-  tr
-    background: #ffffff
-    border-bottom: 1px solid #eef2e6
-    &:nth-child(odd)
-      background: #fdfff9
-    &:first-child
-      background: transparent
-    &:last-child
-      border-bottom: none
-
-.ontime-tables__table--worst
-  tr
-    background: #ffffff
-    border-bottom: 1px solid #f2e9e6
-    &:nth-child(odd)
-      background: #fffbf9
-    &:first-child
-      background: transparent
-    &:last-child
+    line-height: 32px
+    border-bottom: 1px solid #D1E9F5
+    &:hover
       border-bottom: none
 
 .rate-block
-  background: #00B5F4
+  background: #2137B2
   border-radius: 3px
   font-size: 13px
   color: #fff
@@ -422,6 +454,7 @@ b
   width: 75px
   overflow hidden
   box-sizing border-box
+  flex-shrink: 0
   &:before
     content ''
     background-size: 100% auto
@@ -434,14 +467,38 @@ b
     left: 10px
     top: 6px
 
-.rate-block--brown
-  background-image: linear-gradient(269deg, #B56142 0%, #9B443D 100%)
+.rate-block--table
+  padding-left: 5px
+  width: 52px
+  text-align: center
+  &:before
+    display: none
 
-.rate-block--green
-  background: #739d20
+.text-box--danger
+  .rate-block
+    background: #FF6D3B
+    &:before
+      background-image: url('images/svg/icon_rate_danger.svg')
 
-.rate-block--red
-  background: #e7542e
+  .ranking-table__table
+    background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
+
+  .btn-table
+    color: #FF6D3B
+    border: 1px solid #FFDACE
+    &:after
+      background: url('images/icons/btn-icon-danger.svg') center no-repeat
+    .btn-table__text
+      border-bottom: 1px solid #E9CEC5
+
+    &:hover
+      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
+      color: #ffffff
+      &:after
+        background: url('images/icons/btn-icon-hover.svg') center no-repeat
+      .btn-table__text
+        border-bottom: none
+
 
 .reg
   font-weight 600
@@ -454,19 +511,16 @@ b
   &--tbl
     color: #ffffff
 
-.text-box--methology
-  .primary-text
-    font-size: 14px
-    line-height: 24px
-
 .methodology-content
   display: flex
   flex-direction: row
   align-items: flex-start
+  margin-bottom: 30px
 
 .methodology-img
   position: relative
-  top: 4px
+  width: 80px
+  height: 80px
   margin-right: 24px
 
 .related

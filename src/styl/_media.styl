@@ -10,7 +10,6 @@
     padding: 64px 60px 64px 60px
     &--upper
       position: relative
-      padding-left: 315px
 
   .upper-pic
     left: 60px
@@ -18,8 +17,11 @@
   .show_more
     margin-top: 44px
 
-  .ontime-tables__table-wrapper
-    width: 593px
+  .cities-items__content
+    width: 747px
+
+  .methodology-sources__item
+    width: 544px
 
 @media (max-width: 1850px)
   .content
@@ -69,41 +71,42 @@
     height: 568px
     background-repeat no-repeat
     background-position right top
-    padding: 32px 40px 45px 45px
+    padding: 32px 25px 45px 25px
 
   .under-title
     margin-bottom: 32px
-    padding-left: 290px
+    padding-left: 150px
     min-height: 180px
 
-  .text-box--upper
-    padding-left: 45px
-
   .upper-pic
-    left: 54px
+    left: 25px
 
-  .airline-rank__table--wrapper
-    width: 527px
-    margin-left: 24px
+  .text-box
+    padding-left: 25px
+    padding-right: 25px
 
-  .info-list--ontime
-    margin-bottom: 24px
+  .cities-items__content
+    width: 466px
 
-  .ontime-tables__wrapper
-    width: 100%
-    margin-bottom: 24px
-    &:last-child
-      margin-bottom: 0
+  .ranking-table__wrapper
+    margin-bottom: 32px
 
-  .full-table
+  .btn-container
+    margin-bottom: 48px
+
+  .methodology-sources__item
+    width: 404px
+
+  .ranking-table__table
+    thead
+      th
+        padding: 0 12px
+
     tbody
       td
-        &:nth-child(2),
-        &:nth-child(3)
-          width: 21%
-
-  .ontime-tables__table-wrapper
-    width: 100%
+        padding: 0 12px
+        &:first-child
+          width: 20%
 
   .related-head
     padding: 0 20px
@@ -123,15 +126,6 @@
 
   .text-box.last
     display: block
-
-@media (min-width: 1019px) and (max-width: 1370px)
-  .full-table
-    thead
-      th
-        padding: 0 12px
-    tbody
-      td
-        padding: 0 12px
 
 @media (max-width: 1019px)
   .content
@@ -175,14 +169,46 @@
       padding-left: 25px
       .upper-pic
         position: static
-        width: 210px
 
       .under-title
-        width: 445px
-        margin-bottom: 32px
+        width: 545px
+        margin-bottom: 18px
 
       .main-text
         width: 100%
+        margin-bottom: 20px
+
+
+  .ranking-table__table
+    thead
+      th
+        font-size: 8px
+        padding: 0 6px
+
+    tbody
+      td
+        padding: 0 6px
+        &:first-child
+          width: 23%
+
+  .cities-items__photo
+    width: 374px
+    height: 180px
+
+  .cities-items__img-wrap
+    height: 160px
+
+  .cities-items__img
+    top: -10%
+
+  .cities-items__content
+    width: 296px
+
+  .info-text
+    margin-bottom: 18px
+
+  .methodology-sources__item
+    width: auto
 
   .block-title
     margin-bottom: 30px
@@ -190,34 +216,6 @@
   .under-title
     font-size: 16px
     padding-left: 0
-
-  .calendar
-    padding-left: 0
-
-  .calendar__img
-    position: static
-    margin: 0 auto 18px auto
-
-  .airline-rank
-    flex-direction: column
-
-  .airline-rank__table--wrapper
-    margin: 32px auto 0 auto
-    width: 100%
-
-  .full-table
-    thead
-      th
-        padding: 0 10px
-        &:nth-child(3)
-          display: none
-    tbody
-      td
-        padding: 0 10px
-        &:nth-child(2)
-          width: 31%
-        &:nth-child(3)
-          display: none
 
   .related-head
     padding: 0 20px
@@ -287,6 +285,11 @@
     line-height: 16px
     font-weight: 300
 
+  .main-text
+    margin-bottom: 20px
+    &:last-child
+      margin-botoom: 0
+
   .main-pic
     height: 345px
     padding: 16px 12px 16px 12px
@@ -313,80 +316,82 @@
         line-height: 24px
         font-weight: 300
 
-  .calendar__img
-    width: 276px
-    margin: 0 auto 18px auto
-    img
-      width: 276px
-
-  .airline-rank__table
-    th
-      font-size: 10px
-      &:nth-child(3)
-        border-right: none
-      &:nth-child(4),
-      &:nth-child(5)
-        display: none
-    td
-      font-size: 12px
-      &:nth-child(4),
-      &:nth-child(5)
-        display: none
-
-  .info-list--ontime
-    margin-bottom: 8px
-
-  .ontime-tables__wrapper
-    margin-bottom: 12px
-    &:last-child
-      margin-bottom: 0
-
-  .ontime-tables__table
-    th
-      font-size: 10px
-      &:nth-child(3)
-        border-right: none
-      &:nth-child(4),
-      &:nth-child(5)
-        display: none
-    td
-      font-size: 12px
-      &:nth-child(4),
-      &:nth-child(5)
-        display: none
-      &:nth-child(2)
-        width: 58%
-
-  .ontime-tables__header
-    font-size: 13px
-    padding-left: 16px
-    line-height: 16px
-    padding-bottom: 8px
-    &:before
-      display: none
-
-  .full-table-wrapper
-    overflow: scroll
-
-  .full-table
-    min-width: 690px
-    thead
-      th
-        padding: 0 6px
-        font-size: 10px
-
-    tbody
-      td
-        padding: 0 6px
-        font-size: 10px
-      &:nth-child(2),
-      &:nth-child(3)
-        font-size: 12px
-
+  .cities-items__item
+    flex-direction: column
 
   .methodology-content
     flex-direction: column
     align-items: center
+
+  .cities-items__content
+    width: 100%
+
+  .cities-items__photo
+    margin-bottom: 22px
+
+  .cities-items__photo-cont
+    width: 100%
+    margin-bottom: 22px
+
+  .cities-items__photo
+    width: 100%
+    height: 200px
+
+  .cities-items__img-wrap
+    height: 180px
+
+  .cities-items__img
+    top: -30%
+
+  .cities-items__title
+    font-size: 20px
+
+  .info-text
+    padding: 48px 25px 16px 25px
+    &:before
+      left: 50%
+      top: 8px
+      transform: translateX(-50%)
+
+  .ranking-table__wrapper--short
+    position: relative
+    left: -12px
+    width: calc(100% + 24px)
+    overflow-x: scroll
+    .ranking-table__table
+      thead
+        th
+          font-size: 8px
+
+      tbody
+        td
+          font-size: 10px
+          padding: 0
+          &:first-child
+            font-size: 12px
+            padding-left: 4px
+
+      .rate-block
+        font-size: 11px
+
+  .ranking-table__table
+    thead
+      th
+        font-size: 10px
+
+    tbody
+      td
+        &:first-child
+          min-width: 130px
+
+  .btn-table
+    width: 100%
+    display: block
+    padding: 10px 12px
+    font-size: 10px
+    text-align: center
+    &:after
+      display: none
 
   .methodology-img
     margin-right: 0
@@ -454,6 +459,13 @@
     width: 100%
     margin-bottom: 16px
 
+  .methodology-sources
+    margin-left: 0
+    margin-bottom: 6px
+
+  .methodology-links
+    margin-left: 0
+
   .methodology-article
     padding-top: 110px
     padding-left: 0
@@ -506,36 +518,56 @@
     line-height: 41px
     font-weight bold
     position: fixed
-    background-image: linear-gradient(-90deg, #B56142 0%, #9B443D 100%)
+    background-image: linear-gradient(90deg,#1b36cc 0,#2137b2 96%)
     -webkit-backface-visibility: hidden
     top: 10px
     right: 25px
     .icon
       margin-right: 8px
 
-  .ranking-table
-    .full-table
-      display: none
-    .mobile-only-show
-      display: block
+  .text-box--table
+    padding-left: 0
+    padding-right: 0
 
-  .ranking-table.show
-    padding-top: 20px
-    margin-right: 15px
-    margin-left: 15px
-    margin-top: 45px
-    .primary-text
-      display: none
-    .block-title
-      font-size: 24px
-      font-weight: 600
-    .full-table
-      display: table
-      width: 100%
-      overflow scroll
-    .mobile-only-show
-      display: none
+    .breadcrumbs__wrap,
+    .block-title,
+    .main-text
+      margin-left: 12px
+      margin-right: 12px
+
+    .ranking-table__table
+      tbody
+        td
+          &:first-child
+            min-width: 150px
+
+
+  .ranking-table--danger
     .mobile-only-close
+      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
+
+    .rate-block
+      background: #FF6D3B
+      &:before
+        background-image: url('images/svg/icon_rate_danger.svg')
+
+    .ranking-table__table
+      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
+
+  .ranking-table
+    .ranking-table__wrapper
       display: block
+      overflow scroll
     .full-table-wrapper
       border: 1px solid #f2ece6
+
+@media (max-width: 450px)
+  .cities-items__photo
+    width: 100%
+    height: 180px
+
+  .cities-items__img-wrap
+    height: 160px
+
+  .cities-items__img
+    top: 0

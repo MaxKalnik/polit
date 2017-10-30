@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_safe</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Ranking-Metric" transform="translate(-7.000000, -6.000000)" fill-rule="nonzero" fill="#FFFFFF">
-            <g id="Metric-">
-                <g id="Group-2" transform="translate(6.000000, 4.000000)">
-                    <path d="M12.1650763,15.9785886 L13.1394021,15.0042629 L11.7275667,7.39478383 L14.5298699,4.74065247 C15.1568852,4.11363714 15.1565349,3.09727682 14.5298699,2.4702615 C13.9028545,1.84324617 12.8864942,1.84324617 12.2594789,2.4702615 L9.6056978,5.27256464 L1.99586848,3.86072929 L1.02154271,4.83505506 L7.12933755,7.88746376 L3.59843559,11.6157529 L2.011106,11.2941887 L1,12.3052947 L3.67059489,13.3298867 L4.69483669,16.0001313 L5.70594269,14.9890253 L5.38437841,13.4016958 L9.11266759,9.8707938 L12.1650763,15.9785886 Z" id="Shape"></path>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="3.90625%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#1B36CC" offset="0%"></stop>
+            <stop stop-color="#2137B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Safe_Cities_1440" transform="translate(-624.000000, -4061.000000)">
+            <g id="Content" transform="translate(110.000000, 90.000000)">
+                <g id="Safest-Big-Cities" transform="translate(45.000000, 1240.000000)">
+                    <g transform="translate(0.000000, 791.000000)" id="9">
+                        <g transform="translate(0.000000, 1930.000000)">
+                            <g id="Name-of-City/Ranking/Titile" transform="translate(464.000000, 0.000000)">
+                                <g id="Titile">
+                                    <g id="Safety-Rank" transform="translate(0.000000, 4.000000)">
+                                        <g id="Icon_safe" transform="translate(5.000000, 6.000000)">
+                                            <g id="security-shield" fill-rule="nonzero" fill="#FFFFFF">
+                                                <path d="M13.988559,4.66707698 C13.3312881,8.79992966 10.8701771,12.2539236 7.40589589,13.9082956 C7.27773895,13.9686112 7.13869489,14 6.99996188,14 C6.86091782,14 6.72218482,13.9686112 6.59402788,13.9082956 C3.12943559,12.2536159 0.668324607,8.79869873 0.0113647474,4.66676924 C-0.0626676609,4.19963072 0.23190667,3.75249483 0.69352051,3.63124808 C2.93844442,3.04132413 4.87821795,1.89255726 6.30256416,0.309271552 C6.47924654,0.112630237 6.73369406,0 6.99933976,0 L6.99933976,0 C7.26498546,0 7.51943299,0.112630237 7.69611537,0.309579285 C9.11983946,1.89255726 11.059613,3.0410164 13.305159,3.63124808 C13.7680171,3.75249483 14.0629025,4.19963072 13.988559,4.66707698 Z" id="Shape"></path>
+                                            </g>
+                                            <polyline id="Path-3" stroke="url(#linearGradient-1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="4 7.0324707 6.06384277 9.01745605 10.0756836 5.11364746"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
                 </g>
             </g>
         </g>
