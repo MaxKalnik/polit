@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="51px" viewBox="0 0 36 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Number</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C0F3BF" offset="0%"></stop>
+            <stop stop-color="#E1FAE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Financial_Institutions_1440" transform="translate(-306.000000, -5175.000000)">
+            <g id="Content" transform="translate(110.000000, 90.000000)">
+                <g id="Best-Small-&amp;-Regional-Banks" transform="translate(0.000000, 4068.000000)">
+                    <g id="Top-5-Best-Small" transform="translate(0.000000, 217.000000)">
+                        <g id="3" transform="translate(150.000000, 686.000000)">
+                            <g id="Number&amp;Title" transform="translate(45.000000, 96.000000)">
+                                <g id="Number">
+                                    <rect id="Rectangle-2" fill="#D8D8D8" opacity="0" x="0" y="16" width="44" height="56"></rect>
+                                    <path d="M36.64,53.856 C36.64,47.664 33.112,44.136 27.496,42.192 C32.464,40.248 35.92,37.224 35.92,30.816 C35.92,22.824 29.008,18 18.136,18 C11.584,18 5.536,19.944 1.72,22.464 L3.448,33.048 C7.12,30.744 11.512,29.304 15.76,29.304 C19.792,29.304 21.808,30.456 21.808,33.12 C21.808,35.712 19.72,37.656 13.312,37.656 L8.344,37.656 L10,47.664 L13.312,47.664 C20.152,47.664 22.672,49.176 22.672,52.632 C22.672,55.656 20.152,57.24 16.192,57.24 C11.44,57.24 6.688,55.872 2.728,53.928 L1,64.728 C5.248,67.032 11.08,68.544 17.848,68.544 C28.288,68.544 36.64,63.72 36.64,53.856 Z" id="3" fill="url(#linearGradient-1)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

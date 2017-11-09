@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="49px" viewBox="0 0 26 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Number</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F3BFDA" offset="0%"></stop>
+            <stop stop-color="#FAE1EF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Financial_Institutions_1440" transform="translate(-306.000000, -1532.000000)">
+            <g id="Content" transform="translate(110.000000, 90.000000)">
+                <g id="Top-5-Worst-Financial" transform="translate(0.000000, 1047.000000)">
+                    <g id="Top-5-Worst-Banks" transform="translate(0.000000, 269.000000)">
+                        <g id="1" transform="translate(150.000000, 12.000000)">
+                            <g id="Number&amp;Title" transform="translate(45.000000, 96.000000)">
+                                <g id="Number">
+                                    <rect id="Rectangle-2" fill="#D8D8D8" opacity="0" x="0" y="16" width="44" height="56"></rect>
+                                    <text id="1" font-family="WhitneyHTF-Black, Whitney HTF" font-size="72" font-weight="700" line-spacing="80" fill="#D45580">
+                                        <tspan x="0" y="69">1</tspan>
+                                    </text>
+                                    <polygon id="1" fill="url(#linearGradient-1)" points="26.784 67 26.784 18.328 13.824 18.328 1.08 24.232 2.664 35.392 12.24 31.576 12.24 67"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

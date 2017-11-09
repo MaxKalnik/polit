@@ -1,0 +1,48 @@
+include ./top-data
+
+.table-block
+  table.table.rewardexpert__mobile-invisible
+    thead.table__header
+      tr.table__row
+        th.table__cell.table__cell--id
+          | #
+        th.table__cell.table__cell--airport
+          | Airport
+        th.table__cell.table__cell--quality
+          | Quality
+        th.table__cell.table__cell--price
+          | Price
+        th.table__cell.table__cell--satisfaction
+          | Satisfaction
+        th.table__cell.table__cell--score
+          | Score
+        th.table__cell.table__cell--restaurants
+          | Top 3 restaurants
+
+    tbody.table__body
+      each top in tops
+        tr.table__row
+          td.table__cell.table__cell--id
+            = top.rank
+          td.table__cell.table__cell--airport
+            = top.city
+          td.table__cell
+            = top.metro
+          td.table__cell
+            = top.safety
+          td.table__cell
+            = top.crime
+          td.table__cell
+            = top.firearms
+          td.table__cell
+            = top.mortality
+          td.table__cell
+            = top.vehicalFatality
+          td.table__cell
+            = top.environment
+          td.table__cell
+            = top.disaster
+          td.table__cell
+            = top.financial
+          td.table__cell
+            = top.health

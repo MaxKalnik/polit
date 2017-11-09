@@ -175,211 +175,127 @@ ul,li
   text-align: center
   font-weight: 600
 
-.ranking-table__wrapper
-  margin-bottom: 44px
-
-.ranking-table__table
-  width: 100%
-  background-image: linear-gradient(90deg, #1B36CC 0%, #2137B2 96%)
-  border-collapse: collapse
-  border-radius: 5px
-  border: 1px solid #E6E6F2
-  box-sizing: border-box
-  thead
-    th
-      height: 46px
-      font-size: 10px
-      line-height: 16px
-      font-weight: bold
-      color: #ffffff
-      text-transform: uppercase
-      text-align: center
-      padding: 0 22px
-      box-sizing: border-box
-      border-right: 1px solid rgba(255, 255, 255, 0.3)
-      &:first-child
-        text-align: left
-      &:last-child
-        border-right: none
-
-  tbody
-    tr
-      background: #ffffff
-      border-bottom: 1px solid #E6E6F2
-      &:nth-child(odd)
-        background: #F8F8FC
-      &:last-child
-        border-bottom: none
-
-    td
-      height: 51px
-      font-size: 12px
-      line-height: 16px
-      font-weight: 600
-      color: #0A0C0D
-      padding: 0 22px
-      box-sizing: border-box
-      text-align: center
-      &:first-child
-        text-align: left
-        width: 18%
-
-.num
-  color: #859BA6
-
-.btn-container
-  display: flex
-  justify-content: center
-  margin-bottom: 60px
-
-.btn-table
-  display: inline-block
-  font-size: 12px
-  line-height: 26px
+.semibold
   font-weight: 600
-  text-transform: uppercase
-  color: #2137B2
-  border-radius: 5px
-  padding: 14px 24px
-  border: 1px solid #BEC5EF
-  cursor: pointer
+
+.text-box--green
+  .bank-ranking
+    background: #E8FBEC
+
+  .info-text
+    border-color: #C4F4C3
+    &:before
+      background: url(images/icons/info-icon-green.svg) center no-repeat
+
+  .bank-ranking__under-title
+    color: #00990F
+
+  .bank-ranking__logo-container
+    background: #E8FBEC
+
+.text-box--purple
+  .bank-ranking
+    background: #F4EAF8
+
+  .info-text
+    border-color: #F0E1F5
+
+  .bank-ranking__under-title
+    color: #CC1452
+
+.text-box--purple,
+.text-box--green
+  padding-left: 0
+  padding-right: 0
+
+.bank-ranking
+  padding: 90px 0 60px 0
+  margin-bottom: 34px
+
+.bank-ranking__item
+  position: relative
+  width: 920px
+  margin: 0 auto
+  padding: 32px 45px
+  background: #ffffff
   box-sizing: border-box
-  &:after
-    content: ''
-    display: inline-block
-    position: relative
-    top: 4px
-    width: 20px
-    height: 20px
-    margin-left: 10px
-    background: url('images/icons/btn-icon-safe.svg') center no-repeat
-
-  .btn-table__text
-    border-bottom: 1px solid #BCC3E7
-
-  &:hover
-    background-image: linear-gradient(-90deg, #1B36CC 0%, #2137B2 96%)
-    color: #ffffff
-    border: 1px solid transparent
-    &:after
-      background: url('images/icons/btn-icon-hover.svg') center no-repeat
-    .btn-table__text
-      border-bottom: none
-
-.cities-items__container
-  margin-bottom: 30px
+  margin-bottom: 90px
+  border-radius: 5px
   &:last-child
     margin-bottom: 0
 
-.cities-items__item
+.bank-ranking__header
+  display: flex
+  flex-direction: column
+  margin-bottom: 32px
+
+.bank-ranking__header-text
+  position: relative
   display: flex
   flex-direction: row
-  justify-content: space-between
-  align-items: flex-start
-  margin-bottom: 30px
-  &:last-child
-    margin-bottom: 0
 
-.cities-items__header
-  display: flex
-  flex-direction: row
-  align-items: center
-  margin-bottom: 20px
+.bank-ranking__num
+  position: absolute
 
-.cities-items__title
-  font-size: 24px
+.bank-ranking__title
+  font-size: 26px
   line-height: 32px
   font-weight: 600
-  margin-left: 10px
+  margin-left: 56px
+  margin-bottom: 4px
 
-.state
-  font-weight: 200
+.bank-ranking__under-title
+  max-width: 500px
+  font-size: 10px
+  line-height: 16px
+  font-weight: 700
+  text-transform: uppercase
+  margin-left: 56px
 
-.cities-items__photo
-  position: relative
-  width: 434px
-  height: 160px
-  border-radius: 5px
-  border: 10px solid #ffffff
-  box-shadow: 0 0 20px 0 rgba(8,53,77,.12), 10px 26px 53px -28px rgba(0,0,0,.75)
-  overflow: hidden
-  box-sizing: border-box
+.bank-ranking__under-title-text
+  display: inline-block
+  margin-right: 10px
 
-.cities-items__img-wrap
-  position: relative
-  height: 140px
-  border-radius: 5px
-  overflow: hidden
-
-.cities-items__img
-  position: absolute
-  width: 100%
-  max-width: 100%
-  top: -40%
-
-.aurora
-  top: -85%
-
-.rock-valley
-  top: -30%
-
-.new-canaan
-  top: -70%
-
-.commerce-township
-  top: -70%
-
-.orange-city
-  top: -60%
-
-.lincoln
-  top: -70%
-
-.bastrop
-  top: -90%
-
-.del-city
-  top: -50%
-
-.lumberton
-  top: -80%
-
-.shawnee
-  top: -60%
-
-.hammond
-  top: -50%
-
-.anniston
-  top: -75%
-
-.selma
-  top: -60%
-
-.toledo
-  top: -80%
-
-
-.main-text--under-img
-  margin-top: 16px
-
-.cities-items__content
-  width: 667px
-
-.cities-items__text
+.bank-ranking__text
   font-size: 14px
-  line-height: 26px
+  line-height: 24px
+  font-weight: 300
+
+.bank-ranking__logo-container
+  position: absolute
+  right: 45px
+  top: -80px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 160px
+  height: 160px
+  border-radius: 50%
+  background: #F4EAF8
+
+.bank-ranking__logo
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  background: #ffffff
+  box-shadow: 0 3px 6px 0 rgba(108,77,120,0.20)
 
 .info-text
   position: relative
-  padding: 23px 45px 25px 101px
+  width: 920px
+  margin: 0 auto
+  padding: 23px 45px 25px 80px
   font-size: 14px
   line-height: 26px
   font-weight: 300
   font-style: italic
   border: 1px solid #E6E6F2
   border-radius: 5px
-  margin-bottom: 30px
+  margin-bottom: 45px
+  box-sizing: border-box
   &:before
     content: ''
     position: absolute
@@ -387,52 +303,146 @@ ul,li
     width: 32px
     top: 50%
     transform: translateY(-50%)
-    left: 45px
+    left: 32px
     background: url(images/icons/info-icon.svg) center no-repeat
 
-.methodology-sources
-  margin-left: 104px
-  margin-bottom: 32px
+.ranking-table__wrapper
+  padding-left: 45px
+  padding-right: 45px
 
-.methodology-sources__container
+.ranking-table
+  width: 100%
+  border-collapse: collapse
+  border-radius: 5px
+  border: 1px solid #E6E6F2
+  border-top: none
+  box-sizing: border-box
+  thead
+    th
+      height: 60px
+      font-size: 10px
+      line-height: 16px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      text-align: center
+      padding: 0 12px
+      box-sizing: border-box
+      border-right: 1px solid rgba(255, 255, 255, 0.3)
+      &:nth-child(2)
+        text-align: left
+      &:last-child
+        border-right: none
+
+  tbody
+    td
+      height: 51px
+      font-size: 12px
+      line-height: 16px
+      font-weight: 600
+      color: #0A0C0D
+      padding: 0 12px
+      box-sizing: border-box
+      text-align: center
+      &:nth-child(2)
+        text-align: left
+        width: 18%
+
+.text-box--map
+  .main-text
+    margin-bottom: 40px
+
+.map-img__wrapper
   display: flex
-  flex-direction: row
+  justify-content: center
+  margin-bottom: 80px
+
+.map-img
+  width: 100%
+  height: 100%
+
+.map-info
+  display: flex
   justify-content: space-between
-  flex-wrap: wrap
+  align-items: center
 
-.methodology-sources__item
-  width: 444px
-  margin-bottom: 24px
+.map-info__legend
+  width: 380px
 
-.methodology-sources__title
-  font-size: 18px
-  line-height: 26px
-  font-weight: 600
+.map-info__legend-title
+  font-size: 10px
+  line-height: 13px
+  font-weight: 700
+  text-transform: uppercase
   margin-bottom: 12px
 
-.methodology-sources__item-title
-  font-size: 14px
-  line-height: 28px
+.map-info__legend-container
+  display: flex
+  flex-direction: row
+  margin-bottom: 12px
+
+.map-info__legend-item
+  width: 10%
+  height: 16px
+
+.map-info__legend-item--1
+  background: #00990f
+  border-radius: 8px 0 0 8px
+
+.map-info__legend-item--2
+  background: #40b34b
+
+.map-info__legend-item--3
+  background: #7fcc87
+
+.map-info__legend-item--4
+  background: #b2e0b7
+
+.map-info__legend-item--5
+  background: #d9f0db
+
+.map-info__legend-item--6
+  background: #f8dce5
+
+.map-info__legend-item--7
+  background: #efb8ca
+
+.map-info__legend-item--8
+  background: #e589a8
+
+.map-info__legend-item--9
+  background: #d94f7d
+
+.map-info__legend-item--10
+  background: #cc1452
+  border-radius: 0 8px 8px 0
+
+.map-info__legend-nums
+  display: flex
+  justify-content: space-between
+
+.map-info__legend-num
+  @extend .map-info__legend-title
+  margin-bottom: 0
+
+.map-info__text-item
+  font-size: 12px
+  line-height: 20px
+  font-style: italic
+
+.green-marked
+  color: #00990f
   font-weight: 600
 
-.sources-item
-  font-size: 14px
-  line-height: 26px
-  font-weight: 300
-  font-style: italic
-  &:before
-    content: ''
-    display: inline-block
-    width: 6px
-    height: 6px
-    margin-right: 8px
-    background: url(images/icons/bullet.svg)
+.pink-marked
+  color: #cc1452
+  font-weight: 600
+
+.map-info__text
+  width: auto
 
 .methodology-links
   margin-left: 104px
-
-.methodology-links__title
-  @extend .methodology-sources__title
 
 .methodology-links__item
   a
@@ -443,68 +453,8 @@ ul,li
     &:hover
       border-bottom: none
 
-.rate-block
-  background: #2137B2
-  border-radius: 3px
-  font-size: 13px
-  color: #fff
-  letter-spacing: 0
-  font-weight: 600
-  line-height: 26px
-  height: 26px
-  padding: 0 5px 0 28px
-  display: inline-block
-  position: relative
-  vertical-align: text-bottom
-  width: 75px
-  overflow hidden
-  box-sizing border-box
-  flex-shrink: 0
-  &:before
-    content ''
-    background-size: 100% auto
-    display: block
-    background-image: url(images/svg/icon_rate.svg)
-    position: absolute
-    background-repeat: no-repeat
-    width: 13px
-    height: 18px
-    left: 10px
-    top: 6px
-
-.rate-block--table
-  padding-left: 5px
-  width: 52px
-  text-align: center
-  &:before
-    display: none
-
-.text-box--danger
-  .rate-block
-    background: #FF6D3B
-    &:before
-      background-image: url('images/svg/icon_rate_danger.svg')
-
-  .ranking-table__table
-    background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
-
-  .btn-table
-    color: #FF6D3B
-    border: 1px solid #FFDACE
-    &:after
-      background: url('images/icons/btn-icon-danger.svg') center no-repeat
-    .btn-table__text
-      border-bottom: 1px solid #E9CEC5
-
-    &:hover
-      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
-      color: #ffffff
-      border: 1px solid transparent
-      &:after
-        background: url('images/icons/btn-icon-hover.svg') center no-repeat
-      .btn-table__text
-        border-bottom: none
-
+.mobile-only
+  display: none
 
 .reg
   font-weight 600
@@ -528,6 +478,21 @@ ul,li
   min-width: 80px
   height: 80px
   margin-right: 24px
+
+.methodology-source
+  margin-bottom: 32px
+
+.methodology-brands
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+
+.methodology-brands__img
+  margin-left: 20px
+  margin-right: 20px
+  margin-bottom: 36px
 
 .related
   background: #FFFFFF
@@ -603,51 +568,8 @@ ul,li
   -moz-osx-font-smoothing: grayscale
   font-smoothing: grayscale
 
-.show_more
-  position: relative
-  width: 440px
-  box-sizing: border-box
-  font-size: 12px
-  line-height: 24px
-  font-weight: 600
-  color: $color_white
-  letter-spacing: 0
-  border-radius: 5px
-  line-height 56px
-  text-transform uppercase
-  display inline-block
-  padding: 0 24px
-  cursor: pointer
-  margin-top: 70px
-  background-color: $color_white
-  background-image: linear-gradient(-180deg, #42CCF8 2%, #1D97EC 98%)
-  border: 1px solid rgba(255,255,255,1)
-  &:after
-    content: ''
-    position: absolute
-    right: 36px
-    top: 18px
-    width: 20px
-    height: 20px
-    background-image: url(images/svg/button_icon.svg)
-    background-repeat: no-repeat
-  &:hover
-    color: #009AEE
-    background-color: $color_white
-    background-image: none
-    border: 1px solid rgba(198,224,246,1)
-    transition: all .5s ease
-    &:after
-      background-image: url(images/svg/button_icon-hover.svg)
+.mobile-only-close
+  display: none
 
-.overflow-table
-  .block-title
-    font-size: 32px
-    line-height: 40px
-    font-weight: 600
-
-  .mobile-only-close
-    display: none
-
-  .mobile-only-show
-    display: none
+.mobile-only-show
+  display: none

@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(inline='', rel='stylesheet', type='text/css', href='style.min.css')
+  title America’s Financial Vampires
+
+body
+  .page__wrap
+    include ./partials/header.jade
+
+    article.main-article
+      .content
+        include ./partials/featured-cards.jade
+
+        include ./partials/upper.jade
+
+        include ./partials/main.jade
+
+        include ./partials/worst.jade
+
+        include ./partials/best-small.jade
+
+        include ./partials/best-mid-size.jade
+
+        include ./partials/map.jade
+
+        include ./partials/methodology.jade
+
+        include ./partials/related.jade
+
+    include ./partials/footer.jade
+
+  script(inline='', src='js/script.min.js')

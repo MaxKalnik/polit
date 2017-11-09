@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="50px" viewBox="0 0 36 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Number</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F3BFDA" offset="0%"></stop>
+            <stop stop-color="#FAE1EF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Financial_Institutions_1440" transform="translate(-306.000000, -1964.000000)">
+            <g id="Content" transform="translate(110.000000, 90.000000)">
+                <g id="Top-5-Worst-Financial" transform="translate(0.000000, 1047.000000)">
+                    <g id="Top-5-Worst-Banks" transform="translate(0.000000, 269.000000)">
+                        <g id="2" transform="translate(150.000000, 444.000000)">
+                            <g id="Number&amp;Title" transform="translate(45.000000, 96.000000)">
+                                <g id="Number">
+                                    <rect id="Rectangle-2" fill="#D8D8D8" opacity="0" x="0" y="16" width="44" height="56"></rect>
+                                    <path d="M36.496,67.392 L34.696,56.232 L17.92,56.232 L25.912,48.888 C31.816,43.416 35.416,39.024 35.416,32.04 C35.416,23.184 29.08,18 18.784,18 C11.584,18 6.4,19.872 2.008,22.536 L3.664,34.416 C7.984,31.608 12.376,29.808 16.408,29.808 C19.648,29.808 21.592,31.32 21.592,33.768 C21.592,36.648 20.008,38.592 17.272,41.328 L1,57.312 L1,67.392 L36.496,67.392 Z" id="2" fill="url(#linearGradient-1)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

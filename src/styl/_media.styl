@@ -14,14 +14,14 @@
   .upper-pic
     left: 60px
 
-  .show_more
-    margin-top: 44px
+  .text-box--purple,
+  .text-box--green
+    padding-left: 0
+    padding-right: 0
 
-  .cities-items__content
-    width: 747px
-
-  .methodology-sources__item
-    width: 544px
+  .ranking-table__wrapper
+    padding-left: 60px
+    padding-right: 60px
 
 @media (max-width: 1850px)
   .content
@@ -85,28 +85,23 @@
     padding-left: 25px
     padding-right: 25px
 
-  .cities-items__content
-    width: 466px
+  .text-box--purple,
+  .text-box--green
+    padding-left: 0
+    padding-right: 0
 
-  .ranking-table__wrapper
-    margin-bottom: 32px
-
-  .btn-container
-    margin-bottom: 48px
-
-  .methodology-sources__item
-    width: 404px
-
-  .ranking-table__table
+  .ranking-table
     thead
       th
-        padding: 0 12px
+        padding: 0 4px
 
     tbody
       td
-        padding: 0 12px
-        &:first-child
-          width: 20%
+        padding: 0 4px
+
+  .ranking-table__wrapper
+    padding-left: 25px
+    padding-right: 25px
 
   .related-head
     padding: 0 20px
@@ -178,34 +173,13 @@
         width: 100%
         margin-bottom: 20px
 
+  .text-box--purple,
+  .text-box--green
+    padding-left: 0
+    padding-right: 0
 
-  .ranking-table__table
-    thead
-      th
-        font-size: 8px
-        padding: 0 6px
-
-    tbody
-      td
-        padding: 0 6px
-        &:first-child
-          width: 23%
-
-  .cities-items__photo
-    width: 374px
-    height: 180px
-
-  .cities-items__img-wrap
-    height: 160px
-
-  .cities-items__img
-    top: -10%
-
-  .cities-items__content
-    width: 296px
-
-  .info-text
-    margin-bottom: 18px
+  .bank-ranking__under-title
+    max-width: 410px
 
   .methodology-sources__item
     width: auto
@@ -216,6 +190,86 @@
   .under-title
     font-size: 16px
     padding-left: 0
+
+  .info-text
+    width: 690px
+
+  .tables-container
+    display: flex
+    flex-direction: row
+
+  .mobile-only
+    width: 220px
+    display: flex
+    flex-direction: column
+
+  .ranking-table
+    thead
+      th
+        padding: 0 8px
+
+    tbody
+      td
+        padding: 0 8px
+
+  .ranking-table.ranking-table--fixed
+    width: 220px
+    position: relative
+    border-radius: 5px 0 0 0
+    background: #b70a36
+    border-right: none
+    box-shadow: 2px 0 13px 0 rgba(0,0,0,0.16)
+
+    th:last-child
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 100%
+        background: rgba(255, 255, 255, 0.3)
+        right: 0
+        top: 0
+
+    td
+      &:first-child
+        width: 2%
+
+  .ranking-table__wrapper
+    overflow-x: scroll
+    width: calc(100% - 220px)
+    padding-left: 0
+    padding-right: 0
+
+  .ranking-table--data
+    border-radius: 0 5px 5px 5px
+    border-left: none
+    thead
+      th
+        &:first-child,
+        &:nth-child(2)
+          display: none
+
+    tbody
+      td
+        &:first-child,
+        &:nth-child(2)
+          display: none
+
+  .text-box--green
+    .ranking-table.ranking-table--fixed
+      background: #008A0B
+
+  .bank-ranking__item
+    width: 690px
+
+  .map-info
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+  .map-info__legend
+    margin-bottom: 24px
 
   .related-head
     padding: 0 20px
@@ -316,82 +370,99 @@
         line-height: 24px
         font-weight: 300
 
-  .cities-items__item
-    flex-direction: column
-
   .methodology-content
     flex-direction: column
     align-items: center
 
-  .cities-items__content
-    width: 100%
-
-  .cities-items__photo
-    margin-bottom: 22px
-
-  .cities-items__photo-cont
-    width: 100%
-    margin-bottom: 22px
-
-  .cities-items__photo
-    width: 100%
-    height: 200px
-
-  .cities-items__img-wrap
-    height: 180px
-
-  .cities-items__img
-    top: -30%
-
-  .cities-items__title
-    font-size: 20px
-
   .info-text
-    padding: 48px 25px 16px 25px
+    width: calc(100% - 24px)
+    padding: 16px
     &:before
       left: 50%
-      top: 8px
+      top: -16px
       transform: translateX(-50%)
 
-  .ranking-table__wrapper--short
-    position: relative
-    left: -12px
-    width: calc(100% + 24px)
-    overflow-x: scroll
-    .ranking-table__table
-      thead
-        th
-          font-size: 10px
+  .bank-ranking__item
+    width: calc(100% - 24px)
+    padding: 110px 12px 24px 12px
 
-      tbody
-        td
-          font-size: 10px
-          padding: 0
-          &:first-child
-            font-size: 12px
-            padding-left: 8px
+  .bank-ranking__logo-container
+    right: 50%
+    transform: translateX(50%)
 
-      .rate-block
-        font-size: 11px
+  .bank-ranking__header-text
+    align-items: center
+    margin-bottom: 10px
 
-  .ranking-table__table
+  .bank-ranking__num
+    position: static
+    margin-right: 20px
+
+  .bank-ranking__header
+    margin-bottom: 17px
+
+  .bank-ranking__title
+    font-size: 24px
+    margin-bottom: 0
+    margin-left: 0
+
+  .bank-ranking__under-title
+    margin-left: 0
+
+  .bank-ranking__under-title-text
+    font-size: 9px
+    margin-right: 0
+
+  .bank-ranking__text
+    font-size: 12px
+
+  .mobile-only
+    width: 150px
+
+  .ranking-table.ranking-table--fixed
+    width: 150px
+
+  .ranking-table__wrapper
+    width: calc(100% - 150px)
+
+  .ranking-table--data
+    border-radius: 0 5px 5px 5px
+    border-left: none
     thead
       th
-        font-size: 10px
+        &:first-child,
+        &:nth-child(2)
+          display: none
 
     tbody
       td
-        &:first-child
-          min-width: 170px
+        &:first-child,
+        &:nth-child(2)
+          display: none
 
-  .btn-table
-    width: 100%
-    display: block
-    padding: 10px 12px
-    font-size: 10px
-    text-align: center
-    &:after
-      display: none
+  .text-box--green
+    .ranking-table.ranking-table--fixed
+      background: #008A0B
+
+  .map-container
+    display: flex
+    flex-direction: column
+
+  .map-img__wrapper
+    margin-bottom: 45px
+
+  .map-img__wrapper
+    flex-direction: column
+    align-items: center
+
+  .map-info__legend
+    width: 276px
+
+  .map-info__text-item
+    margin-bottom: 16px
+
+  .map-info__legend-item
+    height: 12px
 
   .methodology-img
     margin-right: 0
@@ -399,9 +470,6 @@
 
   .under-title
     margin-bottom: 24px
-
-  .full-table-wrapper
-    border: none
 
   .primary-title
     font-size: 20px
@@ -423,6 +491,11 @@
       font-size 26px
       line-height: 34px
 
+  .text-box--purple,
+  .text-box--green
+    padding-left: 0
+    padding-right: 0
+
   .related-list
     padding-top: 19px
     padding-left: 17px
@@ -440,16 +513,17 @@
   .related
     margin-top: 17px
 
-  .show-table
+  .show-map
     text-align center
     font-size: 12px
-    color: $main_color
+    color: #07b45d
     letter-spacing: 0
     line-height: 22px
     margin: 0 auto
     display: block
+    margin-top: 24px
     span
-      border-bottom: 1px dotted $main_color
+      border-bottom: 1px dotted #07b45d
       margin-left: 8px
     &:hover
       span
@@ -507,7 +581,7 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     text-align: center
-    color: white
+    color: #e589a8
     text-decoration: none
     height: 41px
     text-transform: uppercase
@@ -515,59 +589,39 @@
     padding: 0 20px
     overflow: hidden
     font-size: 11px
-    line-height: 41px
+    line-height: 43px
     font-weight bold
     position: fixed
-    background-image: linear-gradient(90deg,#1b36cc 0,#2137b2 96%)
+    background: #ffffff
     -webkit-backface-visibility: hidden
     top: 10px
     right: 25px
+    border: 1px solid #e589a8
     .icon
       margin-right: 8px
+    &:hover
+      border: 1px solid transparent
+      background: #f8dce5
+      transition: .25s
 
-  .text-box--table
-    padding-left: 0
-    padding-right: 0
-
-    .breadcrumbs__wrap,
-    .block-title,
-    .main-text
-      margin-left: 12px
-      margin-right: 12px
-
-    .ranking-table__table
-      tbody
-        td
-          &:first-child
-            min-width: 170px
-
-
-  .ranking-table--danger
+  .map-container.show
+    padding-top: 100px
+    padding-bottom: 20px
+    .mobile-only-show
+      display: none
     .mobile-only-close
-      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
-
-    .rate-block
-      background: #FF6D3B
-      &:before
-        background-image: url('images/svg/icon_rate_danger.svg')
-
-    .ranking-table__table
-      background-image: linear-gradient(90deg, #FF5A2D 0%, #FF7F48 100%)
-
-  .ranking-table
-    .ranking-table__wrapper
+      width: 80px
       display: block
-      overflow scroll
-    .full-table-wrapper
-      border: 1px solid #f2ece6
-
-@media (max-width: 450px)
-  .cities-items__photo
-    width: 100%
-    height: 180px
-
-  .cities-items__img-wrap
-    height: 160px
-
-  .cities-items__img
-    top: 0
+      position: fixed
+      top: 10px
+      right: 25px
+    .map-info
+      padding-left: 24px
+    .map-info__text-item
+      margin-bottom: 0
+    .map-img__wrapper
+      align-items: flex-start
+      overflow-x: scroll
+    .map-img
+      width: 706px
+      height: 304px

@@ -4,18 +4,10 @@
 $(document).ready(function () {
     var body = $('body');
 
-    body.on('click', '.accordion-head__item', function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href');
-        topr = $(id).offset().top - 40;
-        $('body,html').animate({scrollTop: topr}, 1500);
-
-    });
-
     body.on('click', '.js-table', function(event){
         event.preventDefault();
-        body.append($('.ranking-table'));
-        $('.ranking-table').addClass('show');
+        body.append($('.map-container'));
+        $('.map-container').addClass('show');
         body.scrollTop(0);
         $('.page__wrap').hide();
 
@@ -25,22 +17,13 @@ $(document).ready(function () {
 
     body.on('click', '.mobile-only-close', function (event) {
         event.preventDefault();
-        $('.ranking-table').removeClass('show');
-        $('.js-before_table').after($('.ranking-table'));
+        $('.map-container').removeClass('show');
+        $('.js-before-table').after($('.map-container'));
         $('.page__wrap').show();
-        $('html, body').animate({ scrollTop: $('.ranking-table').position().top }, 500);
+        $('html, body').animate({ scrollTop: $('.map-container').position().top }, 500);
         return false
 
     });
-
-    body.on('click', '.hint', function () {
-        $(this).hide();
-        return false
-    }) ;
-    body.on('click', '.table_show__link', function () {
-        $(".article-table").removeClass('table-short');
-        return false
-    })
 
     function topMenu() {
         if ($(window).width() < 959) {
