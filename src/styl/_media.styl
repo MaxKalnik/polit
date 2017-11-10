@@ -76,7 +76,6 @@
   .under-title
     margin-bottom: 32px
     padding-left: 150px
-    min-height: 180px
 
   .upper-pic
     left: 25px
@@ -220,13 +219,16 @@
     border-right: none
     box-shadow: 2px 0 13px 0 rgba(0,0,0,0.16)
 
+    th
+      vertical-align: middle
+
     th:last-child
       position: relative
       &:after
         content: ''
         position: absolute
         width: 1px
-        height: 100%
+        height: 60px
         background: rgba(255, 255, 255, 0.3)
         right: 0
         top: 0
@@ -513,32 +515,16 @@
   .related
     margin-top: 17px
 
-  .show-map
-    text-align center
-    font-size: 12px
-    color: #07b45d
-    letter-spacing: 0
-    line-height: 22px
-    margin: 0 auto
-    display: block
-    margin-top: 24px
-    span
-      border-bottom: 1px dotted #07b45d
-      margin-left: 8px
-    &:hover
-      span
-        border-bottom: none
-
   .mobile-table
     width: 100%
     margin-bottom: 16px
 
-  .methodology-sources
+  .methodology-source
     margin-left: 0
-    margin-bottom: 6px
 
-  .methodology-links
+  .methodology-brands
     margin-left: 0
+    justify-content: space-around
 
   .methodology-article
     padding-top: 110px
@@ -605,7 +591,7 @@
       transition: .25s
 
   .map-container.show
-    padding-top: 100px
+    padding-top: 20px
     padding-bottom: 20px
     .mobile-only-show
       display: none
@@ -623,5 +609,10 @@
       align-items: flex-start
       overflow-x: scroll
     .map-img
-      width: 706px
-      height: 304px
+      display: none
+    .map-img--big
+      display: block
+
+  .map-container__zoom
+    display: none
+

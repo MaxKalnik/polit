@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="26px" height="49px" viewBox="0 0 26 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>Number</title>
+    <title>Number1</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
@@ -15,13 +15,10 @@
                 <g id="Top-5-Worst-Financial" transform="translate(0.000000, 1047.000000)">
                     <g id="Top-5-Worst-Banks" transform="translate(0.000000, 269.000000)">
                         <g id="1" transform="translate(150.000000, 12.000000)">
-                            <g id="Number&amp;Title" transform="translate(45.000000, 96.000000)">
-                                <g id="Number">
-                                    <rect id="Rectangle-2" fill="#D8D8D8" opacity="0" x="0" y="16" width="44" height="56"></rect>
-                                    <text id="1" font-family="WhitneyHTF-Black, Whitney HTF" font-size="72" font-weight="700" line-spacing="80" fill="#D45580">
-                                        <tspan x="0" y="69">1</tspan>
-                                    </text>
-                                    <polygon id="1" fill="url(#linearGradient-1)" points="26.784 67 26.784 18.328 13.824 18.328 1.08 24.232 2.664 35.392 12.24 31.576 12.24 67"></polygon>
+                            <g id="Number&amp;Title" transform="translate(45.000000, 109.000000)">
+                                <g id="Number1" transform="translate(0.000000, 3.000000)">
+                                    <rect id="Rectangle-2" fill="#D8D8D8" opacity="0" x="0" y="0" width="44" height="56"></rect>
+                                    <polygon id="1" fill="url(#linearGradient-1)" points="26.784 51 26.784 2.328 13.824 2.328 1.08 8.232 2.664 19.392 12.24 15.576 12.24 51"></polygon>
                                 </g>
                             </g>
                         </g>
