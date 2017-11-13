@@ -34,11 +34,12 @@ $(document).ready(function () {
 
     });
 
-    body.on('click', '.popup__close.btn', function(event){
+    body.on('click', '.mobile-only-close', function(event){
         event.preventDefault();
         $('.blur').removeClass('show');
         $('.popup').removeClass('show');
         $('.text-box--map').append($('.map-container'));
+        $('.map-img--big').css('transform', 'scale(1)');
 
         return false
 
@@ -64,6 +65,5 @@ $(document).ready(function () {
     $(window).on('resize', function () {
         topMenu();
     });
-
 
 });

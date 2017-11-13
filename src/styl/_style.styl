@@ -355,6 +355,7 @@ ul,li
   display: flex
   flex-direction: column
   justify-content: center
+  align-items: center
   margin-bottom: 80px
 
 .map-img
@@ -597,13 +598,15 @@ ul,li
   display: block
 
 .popup
-  width: 100%
+  width: 90%
+  left: 50%
+  transform: translateX(-50%)
   display: none
   position: fixed
-  top: 50px
+  top: 4%
   margin: 0 auto
   background: #ffffff
-  padding: 44px 24px 24px 24px
+  padding: 74px 24px 24px 24px
   box-sizing: border-box
   z-index: 4
   .map-container__zoom
@@ -613,43 +616,53 @@ ul,li
   .map-img--big
     display: block
   .map-img__wrapper
-    width: 100%
+    align-items: stretch
+    width: auto
     height: 500px
-    overflow-x: scroll
+    overflow: scroll
   .map-img--big
-    width: 1698px
-    height: 807px
-
-
-.popup__close.btn
-  position: absolute
-  right: 6px
-  top: 10px
-  width: 24px
-  height: 24px
-  border-radius: 50%
-  border: 1px solid #e589a8
-  cursor: pointer
-  &:before
-    content: ''
+    width: 3000px
+    height: 1425px
+    transition: .25s ease-in
+  .mobile-only-close
+    display: block
+  .map.img__block
+    box-shadow: inset 0 3px 16px 0 rgba(41,48,51,0.10)
+    padding: 10px 3px 0 3px
+  .controls
+    display: flex
     position: absolute
-    left: 11px
-    top: 2px
-    width: 2px
-    height: 20px
-    background: #e589a8
-    transform: rotate(45deg)
-
-  &:after
-    content: ''
-    position: absolute
-    left: 11px
-    top: 2px
-    width: 2px
-    height: 20px
-    background: #e589a8
-    transform: rotate(-45deg)
-
+    left: 40px
+    bottom: 210px
 
 .popup.show
   display: block
+
+.mobile-only-close
+  display: none
+  font-style: normal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #e589a8
+  text-decoration: none
+  height: 41px
+  text-transform: uppercase
+  border-radius: 3px
+  padding: 0 20px
+  overflow: hidden
+  font-size: 11px
+  line-height: 43px
+  font-weight bold
+  position: fixed
+  background: #ffffff
+  -webkit-backface-visibility: hidden
+  top: 10px
+  right: 25px
+  border: 1px solid #e589a8
+  .icon
+    margin-right: 8px
+  &:hover
+    border: 1px solid transparent
+    background: #f8dce5
+    transition: .25s

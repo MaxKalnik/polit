@@ -3,27 +3,30 @@
   p.main-text.js-before-table
    | Both in the aggregate and broken down by financial product, we have seen with only a few exceptions to a pattern where cities and suburbs, as well as densely populated and ethnically/economically diverse regions exhibit higher rates of consumer complaints, even after adjusting for population. There is a significant urban/rural divide in banking complaints and, one would assume, business practices.
   div.map-container
-    .map-img__wrapper
-      picture
-        source(media='(max-width: 759px)', srcset='images/photo/map-759.png, images/photo/map-759@2x.png 2x')
-        source(media='(max-width: 1019px)', srcset='images/photo/map-1019.png, images/photo/map-1019@2x.png 2x')
-        img.map-img(src='images/photo/map.png', srcset='images/photo/map@2x.png 2x')
+    .map.img__block
+      .map-img__wrapper
+        picture
+          source(media='(max-width: 759px)', srcset='images/photo/map-759.png, images/photo/map-759@2x.png 2x')
+          source(media='(max-width: 1019px)', srcset='images/photo/map-1019.png, images/photo/map-1019@2x.png 2x')
+          img.map-img(src='images/photo/map.png', srcset='images/photo/map@2x.png 2x')
 
-      img.map-img--big(src='images/photo/map-big.png', srcset='images/photo/map-big@2x.png 2x')
+        picture
+          source(media='(max-width: 759px)', srcset='images/photo/map-big-759.png, images/photo/map-big-759@2x.png 2x')
+          img.map-img--big(src='images/photo/map-big.png', srcset='images/photo/map-big@2x.png 2x')
 
-      a.mobile-only-close(href='')
-        i.icon.icon-close
-        | GO BACK
+        a.mobile-only-close(href='')
+          i.icon.icon-close
+          | GO BACK
 
-      .mobile-only-show
-        a.js-table.show-map(href='')
-          i.icon.icon-zoom
-          span Click for zoom
+        .mobile-only-show
+          a.js-table.show-map(href='')
+            i.icon.icon-zoom
+            span Click for zoom
 
-      .map-container__zoom
-        a.js-table.show-map(href='')
-          i.icon.icon-zoom
-          span Click for zoom
+        .map-container__zoom
+          a.js-table.show-map(href='')
+            i.icon.icon-zoom
+            span Click for zoom
 
     .map-info
       .map-info__legend
