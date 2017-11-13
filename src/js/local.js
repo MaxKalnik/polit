@@ -29,6 +29,7 @@ $(document).ready(function () {
         $('.blur').addClass('show');
         $('.popup').addClass('show');
         $('.popup').append($('.map-container'));
+        $('html, body').animate({ scrollTop: $('.popup').position().top }, 500);
 
         return false
 
