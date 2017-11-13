@@ -99,6 +99,9 @@
   margin-right: 32px
 
 .featured-cards__content
+  width: calc(100% - 333px)
+
+.featured-cards__content
   flex-grow: 1
 
 .featured-cards__header-promo
@@ -178,7 +181,20 @@
   &:last-child
     margin-right: 0
 
+@media (max-width: 1370px)
+  .featured-cards__img-container
+    width: 263px
+
+  .featured-cards__content
+    width: calc(100% - 287px)
+
 @media (max-width: 1019px)
+  .featured-cards__img-container
+    width: 309px
+
+  .featured-cards__content
+    width: calc(100% - 333px)
+
   .page-footer
     .content
       flex-wrap wrap
@@ -204,14 +220,6 @@
 
   .featured-cards__links-list
     width: 100%
-
-@media (max-width: 1370px)
-  .featured-cards__img-container
-    width: 263px
-
-@media (max-width: 1019px)
-  .featured-cards__img-container
-    width: 309px
 
 @media (max-width: 759px)
   .featured-cards__img-container
