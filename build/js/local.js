@@ -67,17 +67,5 @@ $(document).ready(function () {
         topMenu();
     });
 
-    $( function () {
-        $('img.crop').jQcrop({
-        width: 800,
-        height: 600
-        }).on('crop.jQcrop', function(e, data) {
-        console.log('coordinates: ' + data);
-        if (data.stretch) {
-        console.log('image too small!!!!');
-        }
-        });
-    });
-
 
 });
