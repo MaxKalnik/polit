@@ -10,19 +10,39 @@
           source(media='(max-width: 1019px)', srcset='images/photo/map-1019.png, images/photo/map-1019@2x.png 2x')
           img.map-img(src='images/photo/map.png', srcset='images/photo/map@2x.png 2x')
 
+        picture
+          source(media='(max-width: 759px)', srcset='images/photo/map-big-759.png, images/photo/map-big-759@2x.png 2x')
+          img.map-img--big(src='images/photo/map-big.png', srcset='images/photo/map-big@2x.png 2x')
+
+        a.mobile-only-close(href='')
+          i.icon.icon-close
+          | GO BACK
+
+        .mobile-only-show
+          a.js-table.show-map(href='')
+            i.icon.icon-zoom
+            span Click for zoom
+
+        .map-container__zoom
+          a.js-table.show-map(href='')
+            i.icon.icon-zoom
+            span Click for zoom
+
       .pswp(tabindex='-1', role='dialog', aria-hidden='true')
         .pswp__bg
         .pswp__scroll-wrap
           .pswp__container
             .pswp__item
               picture
-                source(media='(max-width: 759px)', srcset='images/photo/map-big-759.png, images/photo/map-big-759@2x.png 2x')
-                img.map-img--big.crop(src='images/photo/map-big.png', srcset='images/photo/map-big@2x.png 2x')
+                source(media='(max-width: 759px)', srcset='images/photo/map-759.png, images/photo/map-759@2x.png 2x')
+                source(media='(max-width: 1019px)', srcset='images/photo/map-1019.png, images/photo/map-1019@2x.png 2x')
+                img.map-img(src='images/photo/map.png', srcset='images/photo/map@2x.png 2x')
             .pswp__item
               picture
-                source(media='(max-width: 759px)', srcset='images/photo/map-big-759.png, images/photo/map-big-759@2x.png 2x')
-                img.map-img--big.crop(src='images/photo/map-big.png', srcset='images/photo/map-big@2x.png 2x')
-
+                source(media='(max-width: 759px)', srcset='images/photo/map-759.png, images/photo/map-759@2x.png 2x')
+                source(media='(max-width: 1019px)', srcset='images/photo/map-1019.png, images/photo/map-1019@2x.png 2x')
+                img.map-img(src='images/photo/map.png', srcset='images/photo/map@2x.png 2x')
+            .pswp__item
           .pswp__ui.pswp__ui--hidden
             .pswp__top-bar
               .pswp__counter
@@ -40,20 +60,6 @@
             button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
             .pswp__caption
               .pswp__caption__center
-
-        a.mobile-only-close(href='')
-          i.icon.icon-close
-          | GO BACK
-
-        .mobile-only-show
-          a.js-table.show-map(href='')
-            i.icon.icon-zoom
-            span Click for zoom
-
-        .map-container__zoom
-          a.js-table.show-map(href='')
-            i.icon.icon-zoom
-            span Click for zoom
 
     .map-info
       .map-info__legend

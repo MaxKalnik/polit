@@ -4,20 +4,22 @@ var openPhotoSwipe = function() {
     // build items array
     var items = [
         {
-            src: 'https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg',
-            w: 964,
-            h: 1024
+            src: 'images/photo/map-big.png',
+            srcset: 'images/photo/map-big@2x.png 2x',
+            w: 3000,
+            h: 1425
         },
         {
-            src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-            w: 1024,
-            h: 683
+            src: 'images/photo/map.png',
+            srcset: 'images/photo/map@2x.png 2x',
+            w: 1078,
+            h: 465
         }
     ];
 
     // define options (if needed)
     var options = {
-             // history & focus options are disabled on CodePen
+
         history: false,
         focus: false,
 
