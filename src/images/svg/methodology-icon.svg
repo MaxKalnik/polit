@@ -4,15 +4,15 @@
     <title>Methodology_icon</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="100%" y1="50%" x2="-1.12891421%" y2="50%" id="linearGradient-1">
-            <stop stop-color="#DF1C6C" offset="0%"></stop>
-            <stop stop-color="#B80B37" offset="100%"></stop>
+        <linearGradient x1="51.0859983%" y1="98.9140017%" x2="51.0859983%" y2="1.0859983%" id="linearGradient-1">
+            <stop stop-color="#12BFF6" offset="0%"></stop>
+            <stop stop-color="#0787E9" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Financial_Institutions_1440" transform="translate(-163.000000, -10563.000000)">
+        <g id="Financial_Institutions_1440" transform="translate(-163.000000, -8714.000000)">
             <g id="Content" transform="translate(110.000000, 90.000000)">
-                <g id="Methodology" transform="translate(45.000000, 10397.000000)">
+                <g id="Methodology" transform="translate(45.000000, 8548.000000)">
                     <g id="Methodology_icon" transform="translate(0.000000, 72.000000)">
                         <rect id="base" x="0" y="0" width="80" height="80"></rect>
                         <g id="Page-1" transform="translate(8.000000, 4.000000)" fill="url(#linearGradient-1)" opacity="0.903419384">

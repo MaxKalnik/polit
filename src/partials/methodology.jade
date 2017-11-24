@@ -4,20 +4,13 @@
     img.methodology-img(src='images/svg/methodology-icon.svg')
     .methodology-text
       p.main-text
-        | RewardExpert analyzed the 2016 FBI Crime in the United States statistics for every location for which data was included in Table 6: Crimes Known to Law Enforcement. We calculated a weighted average of violent and nonviolent crimes (80-20), modified to give additional weight to rates of more serious crime, i.e. homicide, rape, and arson. We then excluded places with fewer than 3,000 inhabitants for reasons of statistical significance (the locations with both the highest and lowest incidence of violent and non-violent crime were places with populations < 10 people).
-      p.main-text
-        | We used GIS (Geographical Information Systems) data provided by the US Census bureau and analyzed data sets provided by the Environmental Protection Agency (Superfund/Brownfields sites, Toxic Release Inventory, and public institution structure points (hospitals and emergency/law enforcement facilities)), FEMA (Flood Loss & Emergency Response), NOAA (Tornado injuries/fatalities & economic damage), the USDOT (Fatal Crash Reporting System), annual daily traffic counts from Kalibrate, and foreclosure and mortgage delinquency rates as of May 2017 from CoreLogic. We also included various indicators from the CDC County Health Ratings and Roadmap data from March of 2017, including premature mortality rates by type, and other public health related indicators. Finally, we tallied the number of fatal workplace accidents recorded by OSHA, the number of ATF licensed firearms dealers by location or zip code.
-      p.main-text
-        | We then calculated weighted percentile rankings for each set of indicators, which were then combined with the weighted average of violent and non-violent crime rates from the FBI CUIS statistics, to produce a final composite risk score.
+        | RewardExpert analyzed consumer complaint data from the Consumer Finance Protection Bureau for all complaints categorized as concerning bank accounts, credit cards, and mortgage loans. We aggregated complaints to 3-digit zip code areas and calculated the average complaints per capita rate, then calculated a percentile rank score ranging from 0 to 1 for all areas. We then aggregated data at the county and congressional district level and calculated an average percentile ranking for each geographical unit, and used this score to estimate the fraction of the vote allocated to the republican candidate. We then compared our estimate to the results of the 2016 general election. We repeated this process, filtering out all complaints post-2012 and compared our estimates to the results of the 2012 general election.
 
   .methodology-source
     p.main-text
       span.semibold Sources: 
-      | Consumer Complaints (CFPB), 3-Digit Zip Code Areas (Census Bureau), Large Commercial Banks (
-      a(href='https://www.federalreserve.gov/releases/lbr/current/' target='_blank') Federal Reserve
-      | ).
+      | Consumer Complaints (CFPB), Census Bureau (3-digit zip code & county boundaries and population)
 
   .methodology-brands
     img.methodology-brands__img(src='images/brand_logo/cfpb.png', srcset='images/brand_logo/cfpb@2x.png 2x')
     img.methodology-brands__img(src='images/brand_logo/census.png', srcset='images/brand_logo/census@2x.png 2x')
-    img.methodology-brands__img(src='images/brand_logo/federal-reserve.png', srcset='images/brand_logo/federal-reserve@2x.png 2x')

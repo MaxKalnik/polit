@@ -64,19 +64,19 @@ gulp.task('stylus', function () {
 });
 
 
-gulp.task('js', function () {
-    return gulp.src([
-            dev_path.js + '**/*'
-        ])
-        .on('error', console.log)
-        .pipe(concat('script.js'))
-        .pipe(jsmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(build_path.js))
-        .pipe(browsersync.reload({
-            stream: true
-        }));
-});
+// gulp.task('js', function () {
+//     return gulp.src([
+//             dev_path.js + '**/*'
+//         ])
+//         .on('error', console.log)
+//         .pipe(concat('script.js'))
+//         .pipe(jsmin())
+//         .pipe(rename({suffix: '.min'}))
+//         .pipe(gulp.dest(build_path.js))
+//         .pipe(browsersync.reload({
+//             stream: true
+//         }));
+// });
 
 // gulp.task('js', function () {
 //     return gulp.src([
@@ -148,7 +148,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', [
-    'jade', 'copyhtml', 'stylus', 'images', 'js', 'browsersync-server', 'watch'
+    'jade', 'copyhtml', 'stylus', 'images', 'browsersync-server', 'watch'
 ]);
 
 gulp.task('prod', ['clean', 'copyhtml','stylus', 'images', 'js', 'inlinesource']);

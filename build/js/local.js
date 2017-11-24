@@ -36,9 +36,17 @@ $(document).ready(function () {
     //     return false
 
     // });
-    body.on('click', '.map-container__zoom', function(event){
+    body.on('click', '.map-img', function(event){
         event.preventDefault();
         $('.pswp').css('display', 'block');
+
+        return false
+
+    });
+
+    body.on('click', '.pswp__button--close', function(event){
+        event.preventDefault();
+        $('.pswp').css('display', 'none');
 
         return false
 

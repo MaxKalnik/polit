@@ -14,17 +14,16 @@
   .upper-pic
     left: 60px
 
-  .text-box--purple,
-  .text-box--green
-    padding-left: 0
-    padding-right: 0
-
-  .ranking-table__wrapper
-    padding-left: 60px
-    padding-right: 60px
-
   .under-title
     min-height: 120px
+
+  .map-img
+    width: 1240px
+
+  .map-video__wrapper
+    video
+      width: 1240px
+      height: 400px
 
 @media (max-width: 1850px)
   .content
@@ -86,26 +85,13 @@
     padding-left: 25px
     padding-right: 25px
 
-  .text-box--purple,
-  .text-box--green
-    padding-left: 0
-    padding-right: 0
+  .map-img
+    width: 930px
 
-  .ranking-table
-    thead
-      th
-        padding: 0 4px
-
-    tbody
-      td
-        padding: 0 4px
-
-  .ranking-table__wrapper
-    padding-left: 25px
-    padding-right: 25px
-
-  .map-info__text
-    margin-left: 40px
+  .map-video__wrapper
+    video
+      width: 930px
+      height: 400px
 
   .related-head
     padding: 0 20px
@@ -162,13 +148,14 @@
     margin: 0 10px
 
   .text-box
-    padding: 45px 25px 45px 25px
+    padding: 32px 25px 32px 25px
     &--upper
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
       padding-left: 25px
+      padding-bottom: 24px
       .upper-pic
         position: static
 
@@ -180,13 +167,8 @@
         width: 100%
         margin-bottom: 20px
 
-  .text-box--purple,
-  .text-box--green
-    padding-left: 0
-    padding-right: 0
-
-  .bank-ranking__under-title
-    max-width: 410px
+  .text-box--maps
+    padding-bottom: 40px
 
   .methodology-sources__item
     width: auto
@@ -198,91 +180,40 @@
     font-size: 16px
     padding-left: 0
 
+  .map-block
+    margin-bottom: 41px
+    &:last-child
+      margin-bottom: 0
+
+  .map-img
+    width: 690px
+
+  .map-video__wrapper
+    video
+      width: 690px
+      height: 400px
+
   .info-text
     width: 690px
 
-  .tables-container
-    display: flex
-    flex-direction: row
+  .facts-list
+    width: 100%
 
-  .mobile-only
-    width: 220px
-    display: flex
-    flex-direction: column
+  .facts-list__item
+    padding-bottom: 24px
 
-  .ranking-table
-    thead
-      th
-        padding: 0 8px
+    &:first-child,
+    &:nth-child(2)
+      margin-right: 244px
 
-    tbody
-      td
-        padding: 0 8px
+    &:last-child
+      padding-bottom: 0
 
-  .ranking-table.ranking-table--fixed
-    width: 220px
-    position: relative
-    border-radius: 5px 0 0 0
-    background: #b70a36
-    border-right: none
-    box-shadow: 2px 0 13px 0 rgba(0,0,0,0.16)
-
-    th
-      vertical-align: middle
-
-    th:last-child
-      position: relative
-      &:after
-        content: ''
-        position: absolute
-        width: 1px
-        height: 60px
-        background: rgba(255, 255, 255, 0.3)
-        right: 0
-        top: 0
-
-    td
-      &:first-child
-        width: 2%
-
-  .ranking-table__wrapper
-    overflow-x: scroll
-    width: calc(100% - 220px)
-    padding-left: 0
-    padding-right: 0
-
-  .ranking-table--data
-    border-radius: 0 5px 5px 5px
-    border-left: none
-    thead
-      th
-        &:first-child,
-        &:nth-child(2)
-          display: none
-
-    tbody
-      td
-        &:first-child,
-        &:nth-child(2)
-          display: none
-
-  .text-box--green
-    .ranking-table.ranking-table--fixed
-      background: #008A0B
-
-  .bank-ranking__item
-    width: 690px
-
-  .map-info
-    flex-direction: column
-    justify-content: flex-start
-    align-items: flex-start
-
-  .map-info__text
-    margin-left: 0
-
-  .map-info__legend
-    margin-bottom: 24px
+  .facts-img
+    position: absolute
+    width: 229px
+    right: 0
+    top: 60px
 
   .related-head
     padding: 0 20px
@@ -387,6 +318,41 @@
         line-height: 24px
         font-weight: 300
 
+  .map-block
+    margin-bottom: 32px
+    &:last-child
+      margin-bottom: 0
+
+  .facts-content
+    flex-direction: column
+
+  .facts-list
+    order: 2
+
+  .facts-list__item
+    padding-bottom: 16px
+
+    &:first-child,
+    &:nth-child(2)
+      margin-right: 0
+
+    &:last-child
+      padding-bottom: 0
+
+  .facts-img
+    position: static
+    width: 243px
+    align-self: center
+    margin-bottom: 24px
+
+  .map-img
+    width: 100%
+
+  .map-video__wrapper
+    video
+      width: 100%
+      height: 300px
+
   .methodology-content
     flex-direction: column
     align-items: center
@@ -398,89 +364,6 @@
       left: 50%
       top: -16px
       transform: translateX(-50%)
-
-  .bank-ranking__item
-    width: calc(100% - 24px)
-    padding: 110px 12px 24px 12px
-
-  .bank-ranking__logo-container
-    right: 50%
-    transform: translateX(50%)
-
-  .bank-ranking__header-text
-    align-items: center
-    margin-bottom: 10px
-
-  .bank-ranking__num
-    position: static
-    margin-right: 20px
-
-  .bank-ranking__header
-    margin-bottom: 17px
-
-  .bank-ranking__title
-    font-size: 24px
-    margin-bottom: 0
-    margin-left: 0
-
-  .bank-ranking__under-title
-    margin-left: 0
-
-  .bank-ranking__under-title-text
-    font-size: 11px
-    margin-right: 0
-    line-height: 20px
-
-  .bank-ranking__text
-    font-size: 14px
-
-  .mobile-only
-    width: 150px
-
-  .ranking-table.ranking-table--fixed
-    width: 150px
-
-  .ranking-table__wrapper
-    width: calc(100% - 150px)
-
-  .ranking-table--data
-    border-radius: 0 5px 5px 5px
-    border-left: none
-    thead
-      th
-        &:first-child,
-        &:nth-child(2)
-          display: none
-
-    tbody
-      td
-        &:first-child,
-        &:nth-child(2)
-          display: none
-
-  .text-box--green
-    .ranking-table.ranking-table--fixed
-      background: #008A0B
-
-  .map-container
-    display: flex
-    flex-direction: column
-
-  .map-img__wrapper
-    margin-bottom: 45px
-
-  .map-img__wrapper
-    flex-direction: column
-    align-items: center
-
-  .map-info__legend
-    width: 276px
-
-  .map-info__text-item
-    margin-bottom: 16px
-
-  .map-info__legend-item
-    height: 12px
 
   .methodology-img
     margin-right: 0
@@ -504,15 +387,17 @@
     font-size 26px
     line-height: 34px
 
+  .text-box--maps
+    .block-title
+      margin-bottom: 16px
+
+  .under-title__text
+    margin-bottom: 16px
+
   .main-article--table
     .block-title
       font-size 26px
       line-height: 34px
-
-  .text-box--purple,
-  .text-box--green
-    padding-left: 0
-    padding-right: 0
 
   .related-list
     padding-top: 19px

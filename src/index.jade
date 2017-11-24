@@ -3,7 +3,10 @@ head
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   link(inline='', rel='stylesheet', type='text/css', href='style.min.css')
-  title America’s Financial Vampires
+  script(type='text/javascript', src='js/jquery-1.11.1.min.js')
+  script(type='text/javascript', src='js/photoswipe.js')
+  script(type='text/javascript', src='js/photoswipe-ui-default.js')
+  title Financial Vampires: Are the Banks Playing Politics
 
 body
   .page__wrap
@@ -15,27 +18,27 @@ body
 
         include ./partials/upper.jade
 
-        include ./partials/main.jade
+        include ./partials/facts.jade
 
-        include ./partials/worst.jade
+        include ./partials/maps-2016.jade
 
-        include ./partials/best-small.jade
+        include ./partials/maps-2012.jade
 
-        include ./partials/best-mid-size.jade
+        include ./partials/maps-votes.jade
 
-        include ./partials/map.jade
+        include ./partials/conclusions.jade
 
         include ./partials/methodology.jade
 
         include ./partials/related.jade
 
-        video(controls='', loop='loop', width='578', height='268')
-          source(src='2016_Compare_2.mp4', type='video/mp4')
+        include ./partials/pswp.jade
 
     include ./partials/footer.jade
 
   .blur
   .popup
 
-  script(type='text/javascript', src='js/script.min.js')
+  script(type='text/javascript', src='js/local.js')
+  script(type='text/javascript', src='js/pswp.js')
 
