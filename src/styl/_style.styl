@@ -186,6 +186,19 @@ ul,li
     top: 6px
     background: url(images/icons/list-item.svg) center no-repeat
 
+  &:after
+    content: ''
+    position: absolute
+    width: 1px
+    height: calc(100% - 15px)
+    top: 21px
+    left: 7px
+    background: url(images/svg/svg_pattern.svg) center repeat
+
+  &:last-child
+    &:after
+      display: none
+
   &:last-child
     padding-bottom: 0
 
@@ -509,3 +522,12 @@ ul,li
     border: 1px solid transparent
     background: #f8dce5
     transition: .25s
+
+.pswp__img
+  background: #ffffff
+  border: 15px solid #ffffff
+
+.map-video__wrapper
+  iframe
+    width: 640px
+    height: 301px
