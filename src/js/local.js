@@ -1,10 +1,7 @@
-/**
- * Created by sergeybytchok on 2/24/17.
- */
 $(document).ready(function () {
     var body = $('body');
-
-    $('.pswp').css('display', 'none');
+    var galEl;
+    var elIndex;
 
     body.on('click', '.mobile-only-show', function(event){
         event.preventDefault();
@@ -26,19 +23,21 @@ $(document).ready(function () {
 
     });
 
-    // body.on('click', '.map-container__zoom', function(event){
-    //     event.preventDefault();
-    //     $('.blur').addClass('show');
-    //     $('.popup').addClass('show');
-    //     $('.popup').append($('.map-container'));
-    //     $('html, body').animate({ scrollTop: $('.popup').position().top }, 500);
-
-    //     return false
-
-    // });
-    body.on('click', '.map-container__zoom', function(event){
+    body.on('click', '.map-img', function(event){
         event.preventDefault();
-        $('.pswp').css('display', 'block');
+        galEl = event.target.id;
+        elIndex = galEl%2;
+        if (galEl == 0 || galEl == 1) {
+            openPhotoSwipe(items1, elIndex);
+        }
+
+        else if (galEl == 2 || galEl == 3) {
+            openPhotoSwipe(items2, elIndex);
+        }
+
+        else if (galEl == 4 || galEl == 5) {
+            openPhotoSwipe(items3, elIndex);
+        };
 
         return false
 
